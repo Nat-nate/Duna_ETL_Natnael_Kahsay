@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{18671F25-D1A8-453C-82D9-C61A3DA1AD03}">
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{25061741-624E-40F2-8F12-49E289135D9D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -36,6 +36,13 @@
           Size="96,60"
           Id="41c468c9-c752-4989-8b1b-b0d3ba8512e2"
           TopLeft="177.857145886032,67.2941185908334" />
+        <AnnotationLayout
+          Text="Hey,this is just Hello World!"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="173.6,60"
+          Id="03549b1b-951e-4896-83c0-edba9ab7aeb3"
+          TopLeft="264.285718786473,234.000003281762" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
