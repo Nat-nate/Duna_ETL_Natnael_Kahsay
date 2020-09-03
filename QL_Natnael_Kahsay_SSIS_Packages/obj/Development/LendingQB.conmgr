@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="LendingQB"
   DTS:DTSID="{70AC6959-EA23-4F29-B6B6-1176BB1C410E}"
@@ -15,7 +15,7 @@
       MicrosoftOnlineServicesAuth="True"
       AuthType="MicrosoftOnlineService">
       <Password
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAADPUXYJNwEz0Orml5nOtp1WfigpJ5am+uxESxDblb+nagAAAAAOgAAAAAIAACAAAABp31VBgYp6qIMCmOE33Z3nzKddQjabAimgQz+XNgjxt0AAAAAY+dwRsMcnR8PBazx0EFKQLxk28WHCCMCIMDoVw1diEj1sjCLhIRtBGD6dZcD2lNaMdgRJ4diiQ4nnDUe2el3DQAAAAFkWrIKc1drb/SQ7bnTEF91ZkM0NxRqg6xWA+trGYQeO8D7LJ1kac74QvRHm924YqBbcEMEBubOC9gM6L7DQ7es=</Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAADXbelmRJwyHeAv7Y0zkJ6WQpNhO4W0mBBFZPQQzXF3DQAAAAAOgAAAAAIAACAAAACvJE0pGS2zttmTdcQustUh85yu1mKDxrRanolXkkpvZUAAAABFt+abZRl/bHW46PlAxQg6O7uun/+Rl/htWv+smHFZ0C9clQUrVEQc0rljDDbcqxa2nCfdu47xY7HktZQQRkpAQAAAAIimME2chpca+otBrEVleSuw4+JoIEBnjnY1evk7+sQxejHI8/7yqCl8S3wlc0INZ7tpT5gVaX1tlawDWj2Hrc8=</Password>
     </ODataConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

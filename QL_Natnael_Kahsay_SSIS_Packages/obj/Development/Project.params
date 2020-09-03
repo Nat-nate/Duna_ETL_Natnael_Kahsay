@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <SSIS:Parameters xmlns:SSIS="www.microsoft.com/SqlServer/SSIS">
   <SSIS:Parameter
     SSIS:Name="Par_LendingQB_ConnectionString">
@@ -38,7 +38,7 @@
         SSIS:Name="Sensitive">1</SSIS:Property>
       <SSIS:Property
         SSIS:Name="Value"
-        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAAByLo8nZQ/B2Q3VNa4FOidKh70W770W4NRqMYBFT34ctAAAAAAOgAAAAAIAACAAAAAMONsMJ+DkSmJWntRkgiimafPJc6cuhqV+YNdSqG0Zk5AAAADW4Xi83BxNhE2fwDCPmPPTYHR2UD8zBiqdeBLZBm5MXKKlJEokfx1EHMOQzxONj0QNSvy5IMxRHeRvNepaSIZFyfkE/kPCFZGcN4lujAUti+X/h1sCmDwy6p3/YXum9zxNr+1bVk99JYXDz1gDhqgdFouadJrHHyBPWcRlgfBNrkD+OyzsWQGJjOv6tvhjDlZAAAAAFjvDzcUwEp/LvzNKaZhmXm2JnEC83B54wpOA3DowoYHDtF6Za76hLAUS7AlcL1BlPpeMFULVQ43dXCi0JC+s0Q==</SSIS:Property>
+        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAADccpdXhei1RL92tYIa0nHGpgmOw8eb51quLDfT7lwJtAAAAAAOgAAAAAIAACAAAAA8ritpvvTz8pqft2ymUFG5t9Gu2zab77MNUnLsBrhLdpAAAADYEMhhpOzrKcd/4rwtnNkgTxCF+4woss1OEZ1h02b4STYePCL7jGUUqW2XIL3JVcwlIsanmbriDz9P4DZQ3mfLvjxaFgDkfnTN/34W96aSQAMs1PtX/oEh7HyK28QI4OCN/NvUTOH4CVkylx0VJZExuv33ZA3800XqTeSmHSpyYD9GZwzSAmJsOArZgZCWFlVAAAAAUkab0KgQXgFjd0MqbhEU12kXmMXLzKtIZtK1Pl9u5Tpgpmzdx2dSINFVQfD2vxzDaZ/pk0duusR3n7OmihY7+Q==</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
