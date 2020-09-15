@@ -26,12 +26,12 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-PEK1K8J</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAADfKDP7/X586xv+Nd6Vzhh5AoS2JZk05rxjzvPyCWr5GAAAAAAOgAAAAAIAACAAAABuFgZ9C6A/uwG7V6nc4tkcvwTIgNegq9N0aT4172W69ZAAAACLszT+GZQ8lbDQCgE8tIwjI5f/UCEJYJtj7uau3C1XV65uRMQcnRS3nCy20qS5urBjNWUIw1mD/I8+i78lHSrsAKZCX1wAofU8K6M5NLWEI5PmQ+mi6izpi0SuewqKBlAAhSzP5DuQtTqWcU4ZRUJaMIWthQS9e7TryXOfqnwCEsOkCvKSP4K67vf0srC2GtBAAAAAAqSYZGjwUuPENVGP6HYj17LI4+DuUN1nRMKZxPhXoWTzi53qkAvjD22J4Ya+ZJQE/cy6APSp1Fd1KDkEAZL4tA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAAAzeCMloXZwWeSjMj868vJsWNTQj6DP9SImP45Y4+4DtgAAAAAOgAAAAAIAACAAAAAX8rq091BK3t/uIaShMFkGpZ1zPRaQgF364DxORtupH5AAAADs8v8P6u7ac4Zc/Z/04DT3Nk6d2tJxs0WFJa1bxaxFmbbzs+h5+DQLD6THCqLvNm1R+46KlF8hCuUdIx1xt2rQw/Q7ZU8FjjsUGP3uNT5CMnmVZq+zZoNP288vYBUj8LzOTlRjRd1InnGUzXdr5yJaJW5KvjZDukK1hkgU9ag+jJNzT9HSeZ2XmLu22qNncVNAAAAA3VOKkpSDVrxoWYD3QkuClESgRNBqPJl8nMuLe1NYF4WBXw3Tbr2bZ/qaLtYCS28vn3HrkN5T+UmUPEAewxCChw==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="Pkg_Natnael_Kahsay_LendingQB.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Pkg_Natnael_Kahsay_ LendingWise.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Pkg_Natnael_Kahsay_ QualityLoans.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="LendingQB.conmgr" />
@@ -721,10 +721,10 @@
                 <SSIS:Property SSIS:Name="Name">Pkg_Natnael_Kahsay_LendingQB</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">109</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">131</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{F315B465-FBBC-411B-BEA6-87E3B49CF04D}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{58F599E1-0472-4988-A7E5-6B4FB74E9C36}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1062,16 +1062,16 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Pkg_Natnael_Kahsay_ LendingWise.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Pkg_Natnael_Kahsay_ QualityLoans.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{F250DEF1-8BEC-43CD-B160-DA3ECC4617C0}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Pkg_Natnael_Kahsay_ QuickenLoan</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{25D69DA1-B020-4CF3-879D-73EF166D7F40}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Pkg_Natnael_Kahsay_ QualityLoans</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">112</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">150</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{F1441CDA-7CDC-4D36-95AC-786111C00891}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{0E42995A-5082-4D82-B28E-162289DB25AB}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

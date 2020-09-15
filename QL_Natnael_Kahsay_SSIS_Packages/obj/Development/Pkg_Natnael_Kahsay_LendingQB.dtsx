@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Natnael_Kahsay_LendingQB"
   DTS:PackageType="5"
-  DTS:VersionBuild="128"
-  DTS:VersionGUID="{F6727C08-2811-406A-97A2-2DD0D13C4112}">
+  DTS:VersionBuild="130"
+  DTS:VersionGUID="{B1248241-E5E7-4328-AFD0-6535E059D9DF}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -132,7 +132,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/12/2020 3:58:55 PM</DTS:VariableValue>
+        DTS:DataType="7">9/13/2020 5:19:54 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -179,7 +179,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/12/2020 3:58:55 PM</DTS:VariableValue>
+        DTS:DataType="7">9/13/2020 5:19:54 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -357,6 +357,31 @@
                       cachedDataType="nText"
                       cachedName="OfficeID"
                       lineageId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\OData Source-Sharepoint_QL_Loans.Outputs[Output].Columns[OfficeID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_Added_Columns&amp;Transformations.Inputs[Derived Column Input].Columns[DCMortgageInsuranceCompany]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="128"
+                      cachedName="DCMortgageInsuranceCompany"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_Data_Conversion.Outputs[Derived Column Output].Columns[DCMortgageInsuranceCompany]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[REPLACENULL](#{Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_Data_Conversion.Outputs[Derived Column Output].Columns[DCMortgageInsuranceCompany]},"Dunatek")</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">REPLACENULL(DCMortgageInsuranceCompany,"Dunatek")</property>
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -2357,82 +2382,6 @@
                       refId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_Data_Conversion.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_Data_Conversion.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_ReplaceNull"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Derived Column_ReplaceNull"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_ReplaceNull.Inputs[Derived Column Input]"
-                  description="Input to the Derived Column Transformation"
-                  name="Derived Column Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_ReplaceNull.Inputs[Derived Column Input].Columns[DCMortgageInsuranceCompany]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="128"
-                      cachedName="DCMortgageInsuranceCompany"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_Data_Conversion.Outputs[Derived Column Output].Columns[DCMortgageInsuranceCompany]"
-                      truncationRowDisposition="FailComponent"
-                      usageType="readWrite">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">[REPLACENULL](#{Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_Data_Conversion.Outputs[Derived Column Output].Columns[DCMortgageInsuranceCompany]},"Dunatek")</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">REPLACENULL(DCMortgageInsuranceCompany,"Dunatek")</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_ReplaceNull.Outputs[Derived Column Output]"
-                  description="Default Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  name="Derived Column Output"
-                  synchronousInputId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_ReplaceNull.Inputs[Derived Column Input]">
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_ReplaceNull.Outputs[Derived Column Error Output]"
-                  description="Error Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Derived Column Error Output"
-                  synchronousInputId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_ReplaceNull.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_ReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_ReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_ReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_ReplaceNull.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -13524,18 +13473,13 @@ where [refTable].[MarketSourceCode] = ?</property>
               name="Derived Column Output"
               startId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_Added_Columns&amp;Transformations.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable.Paths[Derived Column Output2]"
-              endId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Fuzzy Lookup_CrossWalk.Inputs[Fuzzy Lookup Input]"
-              name="Derived Column Output"
-              startId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_ReplaceNull.Outputs[Derived Column Output]" />
-            <path
               refId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable.Paths[Fuzzy Lookup Output]"
               endId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Row Count.Inputs[Row Count Input 1]"
               name="Fuzzy Lookup Output"
               startId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Fuzzy Lookup_CrossWalk.Outputs[Fuzzy Lookup Output]" />
             <path
               refId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable.Paths[Lookup Match Output]"
-              endId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_ReplaceNull.Inputs[Derived Column Input]"
+              endId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Fuzzy Lookup_CrossWalk.Inputs[Fuzzy Lookup Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Lookup_MarketSourceTable.Outputs[Lookup Match Output]" />
             <path
@@ -13790,14 +13734,35 @@ where [refTable].[MarketSourceCode] = ?</property>
               ReadOnlyVariables="System::PackageName,User::VarFromEmail,User::VarPassword,User::VarSmtpClient,User::VarSmtpServerPort,User::VarSubject,User::VarToEmail"
               ReadWriteVariables="System::ErrorCode,System::ErrorDescription,User::VarTimeStamp">
               <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -13917,35 +13882,6 @@ where [refTable].[MarketSourceCode] = ?</property>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Settings.get_Default():ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Sett" +
-    "ings")]
-
-namespace ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -14097,26 +14033,6 @@ namespace ST_1e9cb8777c2b41879b9e2e1e738e622c
 	}
 }]]></ProjectItem>
               <ProjectItem
-                Name="Project"
-                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:CodeName>ST_21b927bac7a34a79848a904cf8b2351e</msb:CodeName>
-    <msb:Language>msBuild</msb:Language>
-    <msb:DisplayName>ST_21b927bac7a34a79848a904cf8b2351e</msb:DisplayName>
-    <msb:ProjectId>{C98F32BF-775B-49B6-BDD2-18922078110E}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="ST_21b927bac7a34a79848a904cf8b2351e.csproj" />
-    <msb:File Include="ScriptMain.cs" />
-    <msb:File Include="Properties\Settings.settings" />
-    <msb:File Include="Properties\AssemblyInfo.cs" />
-    <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="Properties\Resources.Designer.cs" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
-  </msb:ItemGroup>
-</c:Project>]]></ProjectItem>
-              <ProjectItem
                 Name="ST_21b927bac7a34a79848a904cf8b2351e.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -14203,35 +14119,63 @@ namespace ST_1e9cb8777c2b41879b9e2e1e738e622c
   </ProjectExtensions>
 </Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+                Name="Project"
+                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>ST_21b927bac7a34a79848a904cf8b2351e</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>ST_21b927bac7a34a79848a904cf8b2351e</msb:DisplayName>
+    <msb:ProjectId>{C98F32BF-775B-49B6-BDD2-18922078110E}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="ST_21b927bac7a34a79848a904cf8b2351e.csproj" />
+    <msb:File Include="ScriptMain.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Settings.get_Default():ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -14674,11 +14618,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="225.6,41.6"
           Id="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Conditional Split_BorrF&amp;LName"
-          TopLeft="382.406355664195,31.0980396518244" />
+          TopLeft="323.834926095301,26.5098042933585" />
         <NodeLayout
           Size="249.6,41.6"
           Id="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\OData Source-Sharepoint_QL_Loans"
-          TopLeft="75.5253979634263,29.4607846497664" />
+          TopLeft="5.52539677133338,24.1078433982228" />
         <NodeLayout
           Size="129.6,41.6"
           Id="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Row Count"
@@ -14687,10 +14631,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Size="120,41.6"
           Id="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Multicast"
           TopLeft="609.761915146089,261.699350075463" />
-        <NodeLayout
-          Size="213.6,41.6"
-          Id="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\Derived Column_ReplaceNull"
-          TopLeft="163.095240872734,134.333335217308" />
         <NodeLayout
           Size="289.6,41.6"
           Id="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable\OLE DB Destination-Stg_Natnael_Kahsay_QL"
@@ -14761,25 +14701,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable.Paths[BorrFirstorLastName_NotTest]"
-          TopLeft="608.006355664195,51.0339871473652">
+          TopLeft="549.434926095301,48.7398694681323">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="105.193656427033,0"
+              EndConnector="163.765085995927,0"
               Start="0,0"
-              End="97.693656427033,0">
+              End="156.265085995927,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="97.693656427033,0" />
+                    End="156.265085995927,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-24.8995585052335,5,147.4927734375,10.7841796875"
+              BoundingBox="4.38615627921347,5,147.4927734375,10.7841796875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -14807,18 +14747,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable.Paths[Output]"
-          TopLeft="325.125397963426,51.0794121507954">
+          TopLeft="255.125396771333,46.1088238457907">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="57.2809577007689,0"
+              EndConnector="68.7095293239677,0"
               Start="0,0"
-              End="49.7809577007689,0">
+              End="61.2095293239677,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="49.7809577007689,0" />
+                    End="61.2095293239677,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14864,30 +14804,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable.Paths[Lookup Match Output]"
-          TopLeft="406.587308511442,155.940524771112">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-29.8920676387085,0"
-              Start="0,0"
-              End="-22.3920676387085,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-22.3920676387085,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-59.3874205381043,5,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable.Paths[Fuzzy Lookup Output]"
           TopLeft="98.4793650807167,276.874513103558">
           <EdgeLayout.Curve>
@@ -14922,37 +14838,39 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable.Paths[Derived Column Output2]"
-          TopLeft="269.895240872734,175.933335217308">
+          Id="Package\Data Flow Task_LendingQB_From_Sharepoint_To_StagingTable.Paths[Lookup Match Output]"
+          TopLeft="477.253975178109,177.547714324916">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-171.415875792017,59.3411778862495"
+              EndConnector="-378.774610097392,57.726798778642"
               Start="0,0"
-              End="-171.415875792017,51.8411778862495">
+              End="-378.774610097392,50.226798778642">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,25.6705889431248" />
+                    End="0,19.3551170631147" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,25.6705889431248"
-                    Point2="0,29.6705889431248"
-                    Point3="-4,29.6705889431248" />
+                    Point1="0,19.3551170631147"
+                    Point2="0,23.3551170631147"
+                    Point3="-4,23.3551170631147" />
                   <mssgle:LineSegment
-                    End="-167.415875792017,29.6705889431248" />
+                    End="-374.774610097392,23.3551170631147" />
                   <mssgle:CubicBezierSegment
-                    Point1="-167.415875792017,29.6705889431248"
-                    Point2="-171.415875792017,29.6705889431248"
-                    Point3="-171.415875792017,33.6705889431248" />
+                    Point1="-374.774610097392,23.3551170631147"
+                    Point2="-378.774610097392,23.3551170631147"
+                    Point3="-378.774610097392,27.3551170631147" />
                   <mssgle:LineSegment
-                    End="-171.415875792017,51.8411778862495" />
+                    End="-378.774610097392,50.226798778642" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-237.578691767446,28.3551170631147,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
