@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Natnael_Kahsay_LendingQB"
   DTS:PackageType="5"
-  DTS:VersionBuild="130"
-  DTS:VersionGUID="{B1248241-E5E7-4328-AFD0-6535E059D9DF}">
+  DTS:VersionBuild="131"
+  DTS:VersionGUID="{58F599E1-0472-4988-A7E5-6B4FB74E9C36}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -132,7 +132,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/13/2020 5:19:54 PM</DTS:VariableValue>
+        DTS:DataType="7">9/16/2020 4:56:20 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -179,7 +179,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/13/2020 5:19:54 PM</DTS:VariableValue>
+        DTS:DataType="7">9/16/2020 4:56:20 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""

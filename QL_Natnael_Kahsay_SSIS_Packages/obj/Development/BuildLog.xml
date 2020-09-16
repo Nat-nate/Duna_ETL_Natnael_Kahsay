@@ -2,18 +2,23 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Natnael_Kahsay_SSIS_Packages</Name>
-    <LastWriteTime>2020-09-11T02:31:31.0376677Z</LastWriteTime>
+    <LastWriteTime>2020-09-16T20:56:15.3258818Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Pkg_Natnael_Kahsay_LendingQB.dtsx</Name>
-      <LastWriteTime>2020-09-13T21:19:09.3113475Z</LastWriteTime>
+      <LastWriteTime>2020-09-15T18:38:30.8346561Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>Pkg_Natnael_Kahsay_ LendingWise.dtsx</Name>
-      <LastWriteTime>2020-09-13T21:19:48.9360249Z</LastWriteTime>
+      <Name>Pkg_Natnael_Kahsay_ QualityLoans.dtsx</Name>
+      <LastWriteTime>2020-09-15T18:37:53.6484929Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Pkg_Natnael_Kahsay_ QualityLoans 1.dtsx</Name>
+      <LastWriteTime>2020-09-16T21:29:04.9804577Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

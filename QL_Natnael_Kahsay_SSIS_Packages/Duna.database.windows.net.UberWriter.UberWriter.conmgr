@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="Duna.database.windows.net.UberWriter.UberWriter"
+  DTS:DTSID="{0BCD5965-D169-47E5-BF8A-B86679450077}"
+  DTS:CreationName="OLEDB">
+  <DTS:PropertyExpression
+    DTS:Name="ConnectionString">@[$Project::DunaDatabaseWindowsNetUberWriterUberWriter_ConnectionString]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="Password">@[$Project::DunaDatabaseWindowsNetUberWriterUberWriter_Password]</DTS:PropertyExpression>
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=Duna.database.windows.net;User ID=UberWriter;Initial Catalog=UberWriter;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAABSPFgnQzEKnvAZFfJfqUdE18Pp6rvoJUpS1siR1Ega8gAAAAAOgAAAAAIAACAAAADTqn7HYfmI5C/I/degmr+ScPBSoG7eDa6KLCrYSQpQHYAAAAB4l4xmhc6JzEndbp5icLV7GwSbsYJZPz/S2m5DZvFc6c49+0LFbvV8qj7BE6rRMhtxIRXdnUcK6Ka3GHYMF8fNwgz9+HnWn7K+P68Mm04D47VGfWBHakw6mkg1FaJ+N/T7iZr8Zo+XbKPDbeRx27A+mYR4Jv0Qg6nl6TR/giuADkAAAAC82RyGaqO/w1CYHaaHytIaEJzjqgqy1iw9wJnNUoWsqdC5fmqKTe05RgfCSNfmF7HVTMYeBibxB+tZPOBcfKNU</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
