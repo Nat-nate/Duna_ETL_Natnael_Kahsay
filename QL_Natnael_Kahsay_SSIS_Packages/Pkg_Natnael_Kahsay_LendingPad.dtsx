@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-PEK1K8J"
   DTS:CreatorName="DESKTOP-PEK1K8J\natik"
-  DTS:DTSID="{CE2F82AD-68A9-4850-B3B3-9C63BE5A01BC}"
+  DTS:DTSID="{66E29157-488B-44C7-8B05-84BF7038C5A5}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.123"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Pkg_Natnael_Kahsay_UberWriter"
+  DTS:ObjectName="Pkg_Natnael_Kahsay_LendingPad"
   DTS:PackageType="5"
-  DTS:VersionBuild="160"
-  DTS:VersionGUID="{17BEDED6-3AEA-4D68-86B4-5A6903240790}">
+  DTS:VersionBuild="161"
+  DTS:VersionGUID="{FD09B1E4-EBCC-4925-B25D-D1D674BFB7D1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-PEK1K8J.STGQL]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{4E9EDBF7-C3ED-4775-AA2E-9C8CA302BD70}"
+      DTS:DTSID="{F85581A4-7A8A-4FF6-A9DF-C333CD8D2B86}"
       DTS:ObjectName="DESKTOP-PEK1K8J.STGQL">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -29,7 +29,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[FFCM_CrossWalk]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{D16F00A9-7ED2-4036-B317-2E1195DBFB4B}"
+      DTS:DTSID="{D2F20660-91BE-4405-A6FC-25054E3C1601}"
       DTS:ObjectName="FFCM_CrossWalk">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -49,7 +49,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MortgageInsuranceCompany"
-              DTS:DTSID="{7FBE1DEA-9377-429F-8859-FE422552BD99}"
+              DTS:DTSID="{9ED7B7DF-C6BC-4E4E-88C5-BE673AFEA14D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,7 +58,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Insurance_Company"
-              DTS:DTSID="{F74FBD30-2951-46CA-8CA7-AAE183AF1728}"
+              DTS:DTSID="{ED90551C-D7D8-4E34-BB70-303ACDF6A71B}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -69,7 +69,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="3"
-      DTS:DTSID="{D702E50E-71E0-46A6-909E-C23AC2212556}"
+      DTS:DTSID="{6E42524D-68FD-47EE-9B75-2D65E4126C84}"
       DTS:ObjectName="Parameter">
       <DTS:Property
         DTS:DataType="3"
@@ -79,7 +79,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{55F95E25-522E-4787-A8D5-D9482B7621B2}"
+      DTS:DTSID="{A077B2A1-948A-4670-9E6C-3998EA6B29DE}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
@@ -89,7 +89,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{AE94A34B-148A-4F94-8D78-F7EC5C820AD6}"
+      DTS:DTSID="{CB18F392-7D84-4544-ABFD-028ED29EF396}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarFromEmail">
@@ -98,7 +98,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{23499523-335C-42F3-8341-50E543E040AC}"
+      DTS:DTSID="{608D8E48-FAAA-4656-B561-8B5679BEDA57}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarLastModifiedDate">
@@ -107,7 +107,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A9702F74-B5CF-4197-9E41-1447DA8E2F7E}"
+      DTS:DTSID="{5E7EC693-7062-4CDA-811E-74EE74BDCB40}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarPassword">
@@ -116,7 +116,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D5AFBE40-4A63-4432-A041-DA86EE3ACD1E}"
+      DTS:DTSID="{17A9B6BD-97C6-4FB4-BA97-C923CBE46DC9}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="VarRowCount">
@@ -125,18 +125,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C9623B3B-D08A-4BBE-B2F9-0A6571DA7A46}"
+      DTS:DTSID="{4E805115-98FE-4E0A-A288-2D84277DC27A}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/17/2020 11:26:19 AM</DTS:VariableValue>
+        DTS:DataType="7">9/17/2020 2:17:37 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C582D1A5-007B-44FB-A9CB-B5DAB7277A77}"
+      DTS:DTSID="{BAD7E0C8-4004-44F6-A5B4-5AAC50294A3A}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarSmtpClient">
@@ -145,7 +145,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{ED7AC914-6C9D-4B29-B970-3110EE4E2CEB}"
+      DTS:DTSID="{F9FAF054-556E-4207-B29E-73BA1D5652CA}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarSmtpServerPort">
@@ -154,7 +154,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{3D1A3222-6422-4635-9B77-5BFDC82065C0}"
+      DTS:DTSID="{E7921998-66BA-489D-A9BC-B895464343D6}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarSourceName">
@@ -163,7 +163,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{E9F0E913-43C9-4AD4-B012-945B31770D75}"
+      DTS:DTSID="{D7AA655E-86D6-42F9-9720-2D0906C211A0}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarSubject">
@@ -172,18 +172,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A021F134-78EF-4B09-BCAE-685613BA5488}"
+      DTS:DTSID="{B4481C18-FB61-4989-A97B-B6D40F61C54F}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/17/2020 11:26:19 AM</DTS:VariableValue>
+        DTS:DataType="7">9/17/2020 2:17:37 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{65C366C1-FF10-4378-8EF1-553C5BA007DD}"
+      DTS:DTSID="{6AF9C44C-E3EF-4EA8-9D1E-1096E4843485}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarToEmail">
@@ -196,7 +196,7 @@
       DTS:refId="Package\Data Flow Task_From_UberWriter_To_StagingTable"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{1FBB775A-DEDF-45DA-B097-D452A8BC9283}"
+      DTS:DTSID="{9FD6C481-6D60-4568-8B7B-FD8E9D346458}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="Data Flow Task_From_UberWriter_To_StagingTable"
@@ -10008,7 +10008,7 @@ where [refTable].[MarketSourceCode] = ?</property>
                 <connection
                   refId="Package\Data Flow Task_From_UberWriter_To_StagingTable\OLE DB Source_UberWriter.Connections[OleDbConnection]"
                   connectionManagerID="{0BCD5965-D169-47E5-BF8A-B86679450077}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[Duna.database.windows.net.UberWriter.UberWriter]"
+                  connectionManagerRefId="Project.ConnectionManagers[UberWriter]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -12008,7 +12008,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:refId="Package\Execute SQL Task_DeleteStagingTable"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{7EAF5A50-DD74-4839-8B85-492810781C71}"
+      DTS:DTSID="{C5DD6491-46D4-41A3-BD2E-9E57D2783A06}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task_DeleteStagingTable"
@@ -12017,7 +12017,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{4E9EDBF7-C3ED-4775-AA2E-9C8CA302BD70}"
+          SQLTask:Connection="{F85581A4-7A8A-4FF6-A9DF-C333CD8D2B86}"
           SQLTask:SqlStatementSource="Delete From [dbo]. [Stg_Natnael_Kahsay_QL]&#xA;Where [SourceName]='Salesforce'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -12025,7 +12025,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:refId="Package\Execute SQL Task_IncrementalLoad"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{EA459924-0598-4240-A78D-AACF52E6CBD8}"
+      DTS:DTSID="{181B80A1-38FC-4417-A581-7910E3023FC3}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task_IncrementalLoad"
@@ -12034,7 +12034,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{4E9EDBF7-C3ED-4775-AA2E-9C8CA302BD70}"
+          SQLTask:Connection="{F85581A4-7A8A-4FF6-A9DF-C333CD8D2B86}"
           SQLTask:SqlStatementSource=" SELECT MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;,SourceName&#xA;        FROM [dbo].[Stg_Natnael_Kahsay_QL]  &#xA;        Where     SourceName =?&#xA;        Group by  SourceName"
           SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
           <SQLTask:ResultBinding
@@ -12056,7 +12056,7 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:refId="Package\Execute SQL Task_LOG_Table"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{8812563A-2DF4-4A4D-BF58-DD2C134CD3CC}"
+      DTS:DTSID="{02338318-2A79-4845-94FC-AE246483F30B}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task_LOG_Table"
@@ -12117,7 +12117,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{15F04C46-1F94-4609-BB40-47CEA8D1BD00}"
+      DTS:DTSID="{AD2AA93B-703A-409F-88DB-26D9A85E59CD}"
       DTS:From="Package\Execute SQL Task_DeleteStagingTable"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -12125,7 +12125,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{59993ABF-2D2A-4A5E-889D-9F28726FD51E}"
+      DTS:DTSID="{EE4E87A4-F537-4C97-8750-CE88B141D6B7}"
       DTS:From="Package\Data Flow Task_From_UberWriter_To_StagingTable"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
@@ -12133,7 +12133,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{93807095-0A41-4F41-97CB-6D6BE7A159C1}"
+      DTS:DTSID="{6788D6D9-90D1-41CF-AA27-0483B5C4D60A}"
       DTS:From="Package\Execute SQL Task_IncrementalLoad"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
@@ -12143,7 +12143,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
       DTS:CreationName="OnError"
-      DTS:DTSID="{7715338F-BEE4-4960-9FAB-28B2ABBAA4FF}"
+      DTS:DTSID="{47D62444-7E37-41CF-94FC-2C7BA3C77A5A}"
       DTS:EventID="0"
       DTS:EventName="OnError"
       DTS:LocaleID="-1">
@@ -12151,7 +12151,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{59A1D5D6-CF67-4A34-8DBA-CACBC8BE7591}"
+          DTS:DTSID="{4EE2CFBE-BDA3-41E4-986A-2914C5D0E276}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -12164,7 +12164,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task_ErrorLOG"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{E46D6A7A-AAED-4E7B-96FB-273C8273AA3A}"
+          DTS:DTSID="{29533B72-FC7F-4EF6-AC26-4732DB7C37B8}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task_ErrorLOG"
@@ -12223,7 +12223,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Script Task_SendEmail"
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Script Task"
-          DTS:DTSID="{78D7DD2D-48D7-485F-89A1-D86834AD498E}"
+          DTS:DTSID="{50447C1B-CC93-42DC-BDC7-1A0B411A05CD}"
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Script Task_SendEmail">
@@ -12237,14 +12237,35 @@ where [refTable].[MarketSourceCode] = ?</property>
               ReadOnlyVariables="System::PackageName,User::VarFromEmail,User::VarPassword,User::VarSmtpClient,User::VarSmtpServerPort,User::VarSubject,User::VarToEmail"
               ReadWriteVariables="System::ErrorCode,System::ErrorDescription,User::VarTimeStamp">
               <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -12364,35 +12385,6 @@ where [refTable].[MarketSourceCode] = ?</property>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Settings.get_Default():ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Sett" +
-    "ings")]
-
-namespace ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -12544,26 +12536,6 @@ namespace ST_1e9cb8777c2b41879b9e2e1e738e622c
 	}
 }]]></ProjectItem>
               <ProjectItem
-                Name="Project"
-                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:CodeName>ST_21b927bac7a34a79848a904cf8b2351e</msb:CodeName>
-    <msb:Language>msBuild</msb:Language>
-    <msb:DisplayName>ST_21b927bac7a34a79848a904cf8b2351e</msb:DisplayName>
-    <msb:ProjectId>{C98F32BF-775B-49B6-BDD2-18922078110E}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="ST_21b927bac7a34a79848a904cf8b2351e.csproj" />
-    <msb:File Include="ScriptMain.cs" />
-    <msb:File Include="Properties\Settings.settings" />
-    <msb:File Include="Properties\AssemblyInfo.cs" />
-    <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="Properties\Resources.Designer.cs" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
-  </msb:ItemGroup>
-</c:Project>]]></ProjectItem>
-              <ProjectItem
                 Name="ST_21b927bac7a34a79848a904cf8b2351e.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -12650,35 +12622,63 @@ namespace ST_1e9cb8777c2b41879b9e2e1e738e622c
   </ProjectExtensions>
 </Project>]]></ProjectItem>
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+                Name="Project"
+                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>ST_21b927bac7a34a79848a904cf8b2351e</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>ST_21b927bac7a34a79848a904cf8b2351e</msb:DisplayName>
+    <msb:ProjectId>{C98F32BF-775B-49B6-BDD2-18922078110E}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="ST_21b927bac7a34a79848a904cf8b2351e.csproj" />
+    <msb:File Include="ScriptMain.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Settings.get_Default():ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -12891,7 +12891,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:PrecedenceConstraint
           DTS:refId="Package.EventHandlers[OnError].PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{EE4C43D7-587F-4734-AF8B-F6C2C4324D8C}"
+          DTS:DTSID="{CADA415F-6547-4FB4-AD64-D5991CF3D938}"
           DTS:From="Package.EventHandlers[OnError]\Execute SQL Task_ErrorLOG"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -12901,7 +12901,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnPostExecute]"
       DTS:CreationName="OnPostExecute"
-      DTS:DTSID="{D536F581-58B8-4DC6-9A98-1252B3836DFD}"
+      DTS:DTSID="{F7FC3ABC-EAA7-429B-901E-8C94FDA21E3B}"
       DTS:EventID="0"
       DTS:EventName="OnPostExecute"
       DTS:LocaleID="-1">
@@ -12909,7 +12909,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{2A41DD8C-4820-4583-A623-048EB360D583}"
+          DTS:DTSID="{C09F05CD-4E8A-4CB9-82FD-341E70FC380E}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
