@@ -12,7 +12,7 @@
       DTS:ConnectionString="Data Source=Duna.database.windows.net;User ID=UberWriter;Initial Catalog=UberWriter;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
       <DTS:Password
         DTS:Name="Password"
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAABdjM6VsVBtVTLO+EFsH/ZPaN7I4Qs4D4s5qmXeXwwZHQAAAAAOgAAAAAIAACAAAAD75/+f6M3+PISIDkb6X67Av8WlOvHfQDgeM3TkA4N73YAAAAAiaLcpMcihiv2cAt78XsMSbDlbYHy0D/WaIem/l7TW/Cz7tFoOkMkwUxgNfVjSvSMelH6jfmiOewDIef7OJRkE6FBYflqW6vqWl9dOldhBaMQCnIgVi3XjCZtxpyWz8poDkLTZi1BKLt6FtKSE+534fgcCgU6p+8BLUsh4kJGIjEAAAAD+oRL/HckhUtH9KppSt0fb3Jjuc/Hqcd/3bbwkCBnWvnE9oGtqJ32q++4sZC0JJgG9rOQQtQpTrb8vITLAX7ke</DTS:Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAACadvU9BHrF9WB4Stm7/PQw6RODfVn3ge6Q8zNUxPtQbQAAAAAOgAAAAAIAACAAAADtDgxUh3lkYFCeqTP9/QZfU53nicNDw/VpsPOZdKVAtoAAAAAydnn5UcfE6HvIgZ68dcOpJShtJxPHCOkpYO0krWe0DaNvELYJLn0/P3VhFAUjaq0Fn1WfoW7H69mOfFXcXIIOXwr+mQWtc/Uht5oez+ctnt2Qej6taV25o98YvewPQ1M1acQ6i2Td0IARfrwmSId3CI8hb7TNI/AK6ATHzZjcqkAAAAAbuZmp2RhaFu0XeKSUWW3vy0QFew1ZJEis16tGQbv2vS07+sadaGRyvQe2ipMNuYq1jQphFWyJVpMcX9xlwjro</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>
