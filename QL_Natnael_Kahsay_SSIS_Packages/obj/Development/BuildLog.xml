@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Natnael_Kahsay_SSIS_Packages</Name>
-    <LastWriteTime>2020-09-18T00:12:10.7778902Z</LastWriteTime>
+    <LastWriteTime>2020-09-19T00:40:10.5045421Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -23,7 +23,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Natnael_Kahsay_LendingPad.dtsx</Name>
-      <LastWriteTime>2020-09-18T00:38:38.64072Z</LastWriteTime>
+      <LastWriteTime>2020-09-20T02:39:02.6916161Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
