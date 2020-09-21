@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Natnael_Kahsay_LendingPad"
   DTS:PackageType="5"
-  DTS:VersionBuild="186"
-  DTS:VersionGUID="{517EE4AD-6DE7-4F56-B143-DBE18FF0046D}">
+  DTS:VersionBuild="218"
+  DTS:VersionGUID="{5CE1877D-3976-4E97-AE5B-36575BA0A98F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -103,7 +103,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarArchivePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\BulkFiles\ArchivedFiles\</DTS:VariableValue>
+        DTS:DataType="8">C:\BulkFiles\ArchivedFiles</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -135,6 +135,15 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
+      DTS:DTSID="{A445B0E7-05DA-45DA-B394-95FB14451552}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarFTPNewFile">
+      <DTS:VariableValue
+        DTS:DataType="8">LendingPad.JSON</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
       DTS:DTSID="{F345F62E-016D-402E-9440-88C29F5B826C}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
@@ -162,15 +171,6 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A445B0E7-05DA-45DA-B394-95FB14451552}"
-      DTS:IncludeInDebugDump="2345"
-      DTS:Namespace="User"
-      DTS:ObjectName="VarNewFile">
-      <DTS:VariableValue
-        DTS:DataType="8">LendingPad.JSON</DTS:VariableValue>
-    </DTS:Variable>
-    <DTS:Variable
-      DTS:CreationName=""
       DTS:DTSID="{772DB251-48EA-49A0-B5F9-27E145A6D87B}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
@@ -194,9 +194,9 @@
       DTS:Expression="@[User::VarArchivePath]+&quot;\\&quot; +REPLACE( @[User::VarFileName],&quot;.zip&quot;,&quot;_&quot;)+REPLACE(SUBSTRING(REPLACE((DT_WSTR,50)GETDATE(),&quot; &quot;,&quot;-&quot;),1,19),&quot;:&quot;,&quot;-&quot;)+&quot;.zip&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
-      DTS:ObjectName="VarRenameArchive">
+      DTS:ObjectName="VarRenameArchiveFile">
       <DTS:VariableValue
-        DTS:DataType="8">C:\BulkFiles\ArchivedFiles\\LendingPad_2020-09-20-22-54-49.zip</DTS:VariableValue>
+        DTS:DataType="8">C:\BulkFiles\ArchivedFiles\LendingPad_2020-09-21-14-21-27.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -216,7 +216,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/20/2020 10:54:50 PM</DTS:VariableValue>
+        DTS:DataType="7">9/21/2020 2:21:27 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -272,7 +272,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/20/2020 10:54:50 PM</DTS:VariableValue>
+        DTS:DataType="7">9/21/2020 2:21:27 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -290,22 +290,22 @@
       DTS:Namespace="User"
       DTS:ObjectName="VarUnzipFilePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\BulkFiles\UnzippedFile</DTS:VariableValue>
+        DTS:DataType="8">C:\BulkFiles\UnzippedFile\LendingPad.json</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{1B9BD1F7-B8DA-4559-AD2C-5E0E47A91214}"
-      DTS:EvaluateAsExpression="True"
-      DTS:Expression="@[User::VarUnzipFilePath] + &quot;\\&quot; + @[User::VarNewFile]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
-      DTS:ObjectName="VarUnzippedPathFile">
+      DTS:ObjectName="VarUnzipFolder">
       <DTS:VariableValue
-        DTS:DataType="8">C:\BulkFiles\UnzippedFile\LendingPad.JSON</DTS:VariableValue>
+        DTS:DataType="8">C:\BulkFiles\UnzippedFile</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{3CBD4F9F-88C5-4D59-AD8B-EB346A762D57}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::VarLocalPath]+  @[User::VarFileName]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarZipFilePath">
@@ -315,42 +315,9 @@
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Execute SQL Task_IncrementalLoad"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
-      DTS:DTSID="{E33BBB4A-4A6C-46BB-A70E-E8FAF5436125}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Execute SQL Task_IncrementalLoad"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="4">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{3A52B90C-47C2-4DE3-BDCC-169CBC9A8E2A}"
-          SQLTask:SqlStatementSource=" SELECT SourceName&#xA;,MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;        FROM [dbo].[Stg_Natnael_Kahsay_QL]    &#xA;&#x9;Where [SourceName]= ?   &#xA;        Group by  SourceName"
-          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
-          <SQLTask:ResultBinding
-            SQLTask:ResultName="SourceName"
-            SQLTask:DtsVariableName="User::VarSourceName" />
-          <SQLTask:ResultBinding
-            SQLTask:ResultName="MaxLastModifiedDate"
-            SQLTask:DtsVariableName="User::VarLastModifiedDate" />
-          <SQLTask:ParameterBinding
-            SQLTask:ParameterName="0"
-            SQLTask:DtsVariableName="User::VarSourceName"
-            SQLTask:ParameterDirection="Input"
-            SQLTask:DataType="129"
-            SQLTask:ParameterSize="-1" />
-        </SQLTask:SqlTaskData>
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
       DTS:refId="Package\Execute SQL Task_LOGTable"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:Disabled="True"
       DTS:DTSID="{D3CB3C47-32E3-4B57-80B8-8D0FDD0416CF}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
@@ -428,7 +395,7 @@
             <FEFEProperty
               FileSpec="*.zip" />
             <FEFEProperty
-              FileNameRetrievalType="0" />
+              FileNameRetrievalType="1" />
             <FEFEProperty
               Recurse="0" />
           </ForEachFileEnumeratorProperties>
@@ -445,36 +412,36 @@
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute Process Task_UnzipFiles"
           DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:PropertyExpression
-            DTS:Name="Arguments">"X "   +  @[User::VarFileName]   +   " -o" +   @[User::VarUnzipFilePath]</DTS:PropertyExpression>
+            DTS:Name="Arguments">"X "   +   @[User::VarZipFilePath]  +   " -o" +    @[User::VarUnzipFolder]</DTS:PropertyExpression>
           <DTS:PropertyExpression
             DTS:Name="Executable">@[User::Var7zip]</DTS:PropertyExpression>
           <DTS:ObjectData>
             <ExecuteProcessData
               Executable="C:\Program Files\7-Zip\7z.exe"
-              Arguments="X LendingPad.zip -oC:\BulkFiles\UnzippedFile" />
+              Arguments="X C:\BulkFiles\ZippedFile\LendingPad.zip -oC:\BulkFiles\UnzippedFile" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
           DTS:refId="Package\Foreach Loop Container\FST Rename and Move Files"
           DTS:CreationName="Microsoft.FileSystemTask"
-          DTS:Description="C:\BulkFiles\ArchivedFiles\LendingPad_2020-09-20-22-39-33.zip"
+          DTS:Description="C:\BulkFiles\ArchivedFiles\LendingPad_2020_9_21.zip"
           DTS:DTSID="{A0554AE7-F476-44F9-856B-6B0905D0176D}"
           DTS:ExecutableType="Microsoft.FileSystemTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="FST Rename and Move Files"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
               TaskOperationType="MoveFile"
               TaskOverwriteDestFile="True"
-              TaskSourcePath="User::VarUnzipFilePath"
+              TaskSourcePath="User::VarZipFilePath"
               TaskIsSourceVariable="True"
-              TaskDestinationPath="User::VarRenameArchive"
+              TaskDestinationPath="User::VarRenameArchiveFile"
               TaskIsDestinationVariable="True" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -492,8 +459,8 @@
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
           DTS:CreationName=""
-          DTS:DTSID="{F98DCDD2-6689-40F2-B55E-A8F10EF6F9CB}"
-          DTS:ObjectName="{F98DCDD2-6689-40F2-B55E-A8F10EF6F9CB}"
+          DTS:DTSID="{6D4C4EA6-5BE2-47D2-B240-650708115501}"
+          DTS:ObjectName="{6D4C4EA6-5BE2-47D2-B240-650708115501}"
           DTS:ValueIndex="0"
           DTS:VariableName="User::VarFileName" />
       </DTS:ForEachVariableMappings>
@@ -507,7 +474,7 @@
       DTS:LocaleID="-1"
       DTS:ObjectName="FTP Task"
       DTS:TaskContact="FTP Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <FtpData
@@ -528,7 +495,7 @@
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Script Task_CheckFileExistence"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <ScriptProject
@@ -538,6 +505,36 @@
           Language="CSharp"
           ReadOnlyVariables="User::VarFileName,User::VarLocalPath"
           ReadWriteVariables="User::VarIsFileExistsFlag">
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_f4e0dfb83ca14a578f8791faf98cbaab")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_f4e0dfb83ca14a578f8791faf98cbaab")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -744,35 +741,6 @@
   </ProjectExtensions>
 </Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_f4e0dfb83ca14a578f8791faf98cbaab.Properties.Settings.get_Default():ST_f4e0dfb83ca14a578f8791faf98cbaab.Properties.Sett" +
-    "ings")]
-
-namespace ST_f4e0dfb83ca14a578f8791faf98cbaab.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-          <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
 /* The Script Task allows you to perform virtually any operation that can be accomplished in
@@ -923,35 +891,34 @@ namespace ST_f4e0dfb83ca14a578f8791faf98cbaab
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_f4e0dfb83ca14a578f8791faf98cbaab")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_f4e0dfb83ca14a578f8791faf98cbaab")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_f4e0dfb83ca14a578f8791faf98cbaab.Properties.Settings.get_Default():ST_f4e0dfb83ca14a578f8791faf98cbaab.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_f4e0dfb83ca14a578f8791faf98cbaab.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
             Name="Properties\Settings.settings"
             Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -1158,7 +1125,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Script Task_SendEmail"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <ScriptProject
@@ -1167,6 +1134,36 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           VSTAMinorVersion="0"
           Language="CSharp"
           ReadOnlyVariables="System::PackageName,System::StartTime,User::VarFileName,User::VarFromEmail,User::VarLocalPath,User::VarPassword,User::VarSmtpClient,User::VarSmtpServerPort,User::VarSubject,User::VarToEmail">
+          <ProjectItem
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1286,35 +1283,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Settings.get_Default():ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Sett" +
-    "ings")]
-
-namespace ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
           <ProjectItem
             Name="ST_ec665fbd7ea44122a3356a7519f89c44.csproj"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1578,35 +1546,34 @@ namespace ST_1e9cb8777c2b41879b9e2e1e738e622c
   </msb:ItemGroup>
 </c:Project>]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
 
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Settings.get_Default():ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Sett" +
+    "ings")]
 
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+namespace ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
           <ProjectItem
             Name="Properties\Settings.settings"
             Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
@@ -1827,7 +1794,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:refId="Package\Sequence Container"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:Disabled="True"
       DTS:DTSID="{00AF581D-FD7E-44E8-9A68-84B7D6103C88}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
@@ -1838,7 +1804,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:refId="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:Disabled="True"
           DTS:DTSID="{B36A3D25-CF35-4D91-89B5-3BCB73236ED3}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
@@ -2477,40 +2442,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                       refId="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Fuzzy Lookup.Inputs[Fuzzy Lookup Input]"
                       name="Fuzzy Lookup Input">
                       <inputColumns>
-                        <inputColumn
-                          refId="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Fuzzy Lookup.Inputs[Fuzzy Lookup Input].Columns[__FileName]"
-                          cachedCodepage="1252"
-                          cachedDataType="str"
-                          cachedLength="600"
-                          cachedName="__FileName"
-                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[__FileName]">
-                          <properties>
-                            <property
-                              dataType="System.Null"
-                              description="Name of the reference table column with which the input column should be matched."
-                              name="JoinToReferenceColumn"
-                              state="escaped" />
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies whether the match is a fuzzy or an exact match."
-                              name="JoinType"
-                              typeConverter="tcJoinType">2</property>
-                            <property
-                              dataType="System.Single"
-                              description="Specifies the minimum textual similarity required between input and fuzzy matched records on values in this particular join column.  Must be a floating point value between 0.0 and 1.0."
-                              name="MinSimilarity">0</property>
-                            <property
-                              dataType="System.UInt32"
-                              description="Specifies the comparison options for character data. The options are those supported by the FoldString function."
-                              name="FuzzyComparisonFlags"
-                              typeConverter="tcComparisonFlags">1</property>
-                            <property
-                              dataType="System.UInt32"
-                              description="Flags to FoldString that should be used when comparing whether two strings are equivalent."
-                              name="FuzzyComparisonFlagsEx"
-                              typeConverter="tcComparisonFlagsEx">0</property>
-                          </properties>
-                        </inputColumn>
                         <inputColumn
                           refId="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Fuzzy Lookup.Inputs[Fuzzy Lookup Input].Columns[ActualClosingDate]"
                           cachedDataType="dbTimeStamp"
@@ -5968,31 +5899,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                       refId="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Fuzzy Lookup.Outputs[Fuzzy Lookup Output]"
                       name="Fuzzy Lookup Output">
                       <outputColumns>
-                        <outputColumn
-                          refId="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[__FileName]"
-                          codePage="1252"
-                          dataType="str"
-                          length="600"
-                          lineageId="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[__FileName]"
-                          name="__FileName">
-                          <properties>
-                            <property
-                              dataType="System.Null"
-                              description="Specifies the reference table column that is copied to the output for each match result."
-                              name="CopyFromReferenceColumn"
-                              state="escaped" />
-                            <property
-                              containsID="true"
-                              dataType="System.Int32"
-                              description="Specifies the lineage identifier of the input column from which to copy to this output column for each match."
-                              name="SourceInputColumnLineageID">#{Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\JSON Source (REST API or File).Outputs[JsonSourceOutput].Columns[__FileName]}</property>
-                            <property
-                              dataType="System.Int32"
-                              description="Specifies whether the column is used to indicate confidence or similarity."
-                              name="ColumnType"
-                              typeConverter="tcColumnType">0</property>
-                          </properties>
-                        </outputColumn>
                         <outputColumn
                           refId="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Fuzzy Lookup.Outputs[Fuzzy Lookup Output].Columns[ActualClosingDate]"
                           dataType="dbTimeStamp"
@@ -13849,18 +13755,48 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package\Sequence Container\Execute SQL Task_Delete_StagingTable"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:Disabled="True"
           DTS:DTSID="{245258A0-429F-480A-8039-2333B8988176}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task_Delete_StagingTable"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
               SQLTask:Connection="{3A52B90C-47C2-4DE3-BDCC-169CBC9A8E2A}"
               SQLTask:SqlStatementSource="DELETE From [dbo].[Stg_Natnael_Kahsay_QL]&#xA;WHERE SourceName='LendingPad'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Execute SQL Task_IncrementalLoad"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{E33BBB4A-4A6C-46BB-A70E-E8FAF5436125}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task_IncrementalLoad"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{3A52B90C-47C2-4DE3-BDCC-169CBC9A8E2A}"
+              SQLTask:SqlStatementSource=" SELECT SourceName&#xA;,MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;        FROM [dbo].[Stg_Natnael_Kahsay_QL]    &#xA;&#x9;Where [SourceName]= ?   &#xA;        Group by  SourceName"
+              SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="SourceName"
+                SQLTask:DtsVariableName="User::VarSourceName" />
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="MaxLastModifiedDate"
+                SQLTask:DtsVariableName="User::VarLastModifiedDate" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::VarSourceName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -13872,12 +13808,12 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="File System Task"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
               TaskOperationType="DeleteFile"
-              TaskSourcePath="User::VarUnzippedPathFile"
+              TaskSourcePath="User::VarUnzipFilePath"
               TaskIsSourceVariable="True" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -13899,6 +13835,14 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
           DTS:To="Package\Sequence Container\File System Task" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{C0068A99-1A83-4EFE-8FEC-8DA6632BC5BD}"
+          DTS:From="Package\Sequence Container\Execute SQL Task_IncrementalLoad"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\Sequence Container\Execute SQL Task_Delete_StagingTable" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
   </DTS:Executables>
@@ -13922,6 +13866,14 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\Script Task_SendEmail" />
     <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{B54D836E-617A-4E77-BFBA-55991FA21ED6}"
+      DTS:From="Package\Foreach Loop Container"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Sequence Container" />
+    <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
       DTS:DTSID="{695CE0B8-9968-426B-AA6F-A75C96AB595A}"
@@ -13931,6 +13883,14 @@ where [refTable].[MarketSourceCode] = ?</property>
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
       DTS:To="Package\Foreach Loop Container" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{C88B2BFC-5166-4C63-B449-6249B83FE673}"
+      DTS:From="Package\Sequence Container"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Execute SQL Task_LOGTable" />
   </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
@@ -14728,7 +14688,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <NodeLayout
           Size="262.4,56.8"
           Id="Package\Execute SQL Task_LOGTable"
-          TopLeft="346.428577328216,647.223538399073" />
+          TopLeft="75.7142870036934,640.341185361374" />
         <NodeLayout
           Size="232,41.6"
           Id="Package\Foreach Loop Container\Execute Process Task_UnzipFiles"
@@ -14765,159 +14725,79 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           PanelSize="269.6,213.6"
           Size="269.6,256.8"
           Id="Package\Foreach Loop Container"
-          TopLeft="32.8571434166968,392.294123148836" />
+          TopLeft="24.2857146992977,253.117650608703" />
         <NodeLayout
           Size="121.6,41.6"
           Id="Package\FTP Task"
-          TopLeft="33.5714291431466,156.764708080919" />
+          TopLeft="29.2857147844471,16.8235296477086" />
         <NodeLayout
           Size="224.8,41.6"
           Id="Package\Script Task_CheckFileExistence"
-          TopLeft="17.1428574347986,291.352945262585" />
+          TopLeft="3.57142863224999,146.823531470909" />
         <NodeLayout
           Size="184.8,41.6"
           Id="Package\Script Task_SendEmail"
-          TopLeft="311.428576732169,159.058825760151" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="94.3714291431466,198.364708080919">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="35.171428291652,92.9882371816665"
-              Start="0,0"
-              End="35.171428291652,85.4882371816665">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,42.4941185908332" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,42.4941185908332"
-                    Point2="0,46.4941185908332"
-                    Point3="4,46.4941185908332" />
-                  <mssgle:LineSegment
-                    End="31.171428291652,46.4941185908332" />
-                  <mssgle:CubicBezierSegment
-                    Point1="31.171428291652,46.4941185908332"
-                    Point2="35.171428291652,46.4941185908332"
-                    Point3="35.171428291652,50.4941185908332" />
-                  <mssgle:LineSegment
-                    End="35.171428291652,85.4882371816665" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="165.676190768132,291.352945262585">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="238.152385964037,-90.694119502434"
-              Start="0,0"
-              End="238.152385964037,-83.194119502434">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-32.6622165055776" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,-32.6622165055776"
-                    Point2="0,-36.6622165055776"
-                    Point3="4,-36.6622165055776" />
-                  <mssgle:LineSegment
-                    End="234.152385964037,-36.6622165055776" />
-                  <mssgle:CubicBezierSegment
-                    Point1="234.152385964037,-36.6622165055776"
-                    Point2="238.152385964037,-36.6622165055776"
-                    Point3="238.152385964037,-40.6622165055776" />
-                  <mssgle:LineSegment
-                    End="238.152385964037,-83.194119502434" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="111.076192982018,-31.6622165055776,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="129.542857434799,332.952945262585">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="38.1142859818982,59.3411778862507"
-              Start="0,0"
-              End="38.1142859818982,51.8411778862507">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,25.6705889431254" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,25.6705889431254"
-                    Point2="0,29.6705889431254"
-                    Point3="4,29.6705889431254" />
-                  <mssgle:LineSegment
-                    End="34.1142859818982,29.6705889431254" />
-                  <mssgle:CubicBezierSegment
-                    Point1="34.1142859818982,29.6705889431254"
-                    Point2="38.1142859818982,29.6705889431254"
-                    Point3="38.1142859818982,33.6705889431254" />
-                  <mssgle:LineSegment
-                    End="38.1142859818982,51.8411778862507" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="11.0571429909491,34.6705889431254,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="278.571433315472,67.2941185908327" />
         <NodeLayout
           Size="356.8,41.6"
           Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable"
-          TopLeft="17.642857349649,83.5529469034653" />
+          TopLeft="16.2142858967492,179.905889431249" />
         <NodeLayout
           Size="265.6,41.6"
           Id="Package\Sequence Container\Execute SQL Task_Delete_StagingTable"
-          TopLeft="34.4571509098519,4.78823991646868" />
+          TopLeft="47.3142939859507,75.1411820796126" />
+        <NodeLayout
+          Size="156.8,41.6"
+          Id="Package\Sequence Container\File System Task"
+          TopLeft="123.885723725144,281.741183720493" />
         <EdgeLayout
           Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
-          TopLeft="167.257150909852,46.3882399164687">
+          TopLeft="180.114293985951,116.741182079613">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="28.7857064397971,37.1647069869966"
+              EndConnector="14.4999919107985,63.1647073516368"
               Start="0,0"
-              End="28.7857064397971,29.6647069869966">
+              End="14.4999919107985,55.6647073516368">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.5823534934983" />
+                    End="0,27.5823536758184" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,14.5823534934983"
-                    Point2="0,18.5823534934983"
-                    Point3="4,18.5823534934983" />
+                    Point1="0,27.5823536758184"
+                    Point2="0,31.5823536758184"
+                    Point3="4,31.5823536758184" />
                   <mssgle:LineSegment
-                    End="24.7857064397971,18.5823534934983" />
+                    End="10.4999919107985,31.5823536758184" />
                   <mssgle:CubicBezierSegment
-                    Point1="24.7857064397971,18.5823534934983"
-                    Point2="28.7857064397971,18.5823534934983"
-                    Point3="28.7857064397971,22.5823534934983" />
+                    Point1="10.4999919107985,31.5823536758184"
+                    Point2="14.4999919107985,31.5823536758184"
+                    Point3="14.4999919107985,35.5823536758184" />
                   <mssgle:LineSegment
-                    End="28.7857064397971,29.6647069869966" />
+                    End="14.4999919107985,55.6647073516368" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
+          TopLeft="198.450004810947,221.505889431249">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.2352942892432"
+              Start="0,0"
+              End="0,52.7352942892432">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.7352942892432" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14927,35 +14807,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <NodeLayout
-          Size="156.8,41.6"
-          Id="Package\Sequence Container\File System Task"
-          TopLeft="126.742866630944,175.447064582699" />
+          Size="247.2,41.6"
+          Id="Package\Sequence Container\Execute SQL Task_IncrementalLoad"
+          TopLeft="30.1714365511526,8.61176938185679" />
         <EdgeLayout
-          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 1]"
-          TopLeft="196.042857349649,125.152946903465">
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint 2]"
+          TopLeft="153.771436551153,50.2117693818568">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="9.10000928129466,50.2941176792341"
+              EndConnector="26.3428574347981,24.9294126977558"
               Start="0,0"
-              End="9.10000928129466,42.7941176792341">
+              End="26.3428574347981,17.4294126977558">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,21.1470588396171" />
+                    End="0,8.46470634887792" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,21.1470588396171"
-                    Point2="0,25.1470588396171"
-                    Point3="4,25.1470588396171" />
+                    Point1="0,8.46470634887792"
+                    Point2="0,12.4647063488779"
+                    Point3="4,12.4647063488779" />
                   <mssgle:LineSegment
-                    End="5.10000928129466,25.1470588396171" />
+                    End="22.3428574347981,12.4647063488779" />
                   <mssgle:CubicBezierSegment
-                    Point1="5.10000928129466,25.1470588396171"
-                    Point2="9.10000928129466,25.1470588396171"
-                    Point3="9.10000928129466,29.1470588396171" />
+                    Point1="22.3428574347981,12.4647063488779"
+                    Point2="26.3428574347981,12.4647063488779"
+                    Point3="26.3428574347981,16.4647063488779" />
                   <mssgle:LineSegment
-                    End="9.10000928129466,42.7941176792341" />
+                    End="26.3428574347981,17.4294126977558" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14967,14 +14847,184 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="388.8,297.6"
-          Size="388.8,340.8"
+          PanelSize="388.8,378.4"
+          Size="388.8,421.6"
           Id="Package\Sequence Container"
           TopLeft="438.142864331907,281.952943257065" />
-        <NodeLayout
-          Size="247.2,41.6"
-          Id="Package\Execute SQL Task_IncrementalLoad"
-          TopLeft="495.0000084298,196.529414520957" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="90.0857147844471,58.4235296477086">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-10.2476194855304,88.4000018232"
+              Start="0,0"
+              End="-10.2476194855304,80.9000018232">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.6651600967898" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,48.6651600967898"
+                    Point2="0,52.6651600967898"
+                    Point3="-4,52.6651600967898" />
+                  <mssgle:LineSegment
+                    End="-6.24761948553041,52.6651600967898" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-6.24761948553041,52.6651600967898"
+                    Point2="-10.2476194855304,52.6651600967898"
+                    Point3="-10.2476194855304,56.6651600967898" />
+                  <mssgle:LineSegment
+                    End="-10.2476194855304,80.9000018232" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="152.104761965583,146.823531470909">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="218.866671349889,-37.929412880076"
+              Start="0,0"
+              End="218.866671349889,-30.429412880076">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-11.3325965847374" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,-11.3325965847374"
+                    Point2="0,-15.3325965847374"
+                    Point3="4,-15.3325965847374" />
+                  <mssgle:LineSegment
+                    End="214.866671349889,-15.3325965847374" />
+                  <mssgle:CubicBezierSegment
+                    Point1="214.866671349889,-15.3325965847374"
+                    Point2="218.866671349889,-15.3325965847374"
+                    Point3="218.866671349889,-19.3325965847374" />
+                  <mssgle:LineSegment
+                    End="218.866671349889,-30.429412880076" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="101.433335674945,-10.3325965847374,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="115.97142863225,188.423531470909">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="43.1142860670477,64.6941191377945"
+              Start="0,0"
+              End="43.1142860670477,57.1941191377945">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.3470595688973" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.3470595688973"
+                    Point2="0,32.3470595688973"
+                    Point3="4,32.3470595688973" />
+                  <mssgle:LineSegment
+                    End="39.1142860670477,32.3470595688973" />
+                  <mssgle:CubicBezierSegment
+                    Point1="39.1142860670477,32.3470595688973"
+                    Point2="43.1142860670477,32.3470595688973"
+                    Point3="43.1142860670477,36.3470595688973" />
+                  <mssgle:LineSegment
+                    End="43.1142860670477,57.1941191377945" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="13.5571430335238,37.3470595688973,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="293.885714699298,381.517650608703">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="144.257149632609,42.3019593150285"
+              Start="0,0"
+              End="136.757149632609,42.3019593150285">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="82.2270523890947,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="82.2270523890947,0"
+                    Point2="86.2270523890947,0"
+                    Point3="86.2270523890947,4" />
+                  <mssgle:LineSegment
+                    End="86.2270523890947,38.3019593150285" />
+                  <mssgle:CubicBezierSegment
+                    Point1="86.2270523890947,38.3019593150285"
+                    Point2="86.2270523890947,42.3019593150285"
+                    Point3="90.2270523890947,42.3019593150285" />
+                  <mssgle:LineSegment
+                    End="136.757149632609,42.3019593150285" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="438.142864331907,561.686276590398">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-100.028577328214,107.054908770976"
+              Start="0,0"
+              End="-92.5285773282137,107.054908770976">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-36.2383388571718,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-36.2383388571718,0"
+                    Point2="-40.2383388571718,0"
+                    Point3="-40.2383388571718,4" />
+                  <mssgle:LineSegment
+                    End="-40.2383388571718,103.054908770976" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-40.2383388571718,103.054908770976"
+                    Point2="-40.2383388571718,107.054908770976"
+                    Point3="-44.2383388571718,107.054908770976" />
+                  <mssgle:LineSegment
+                    End="-92.5285773282137,107.054908770976" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -15036,6 +15086,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="112.8,41.6"
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Lookup"
+          TopLeft="256.714289473028,136.117648967822" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Derived Column"
+          TopLeft="715.000012176378,107.823530923949" />
+        <NodeLayout
           Size="129.6,41.6"
           Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Row Count"
           TopLeft="78.5968266808261,366.559481883572" />
@@ -15048,187 +15106,17 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\JSON Source (REST API or File)"
           TopLeft="36.6857148695965,19.882353220019" />
         <NodeLayout
-          Size="154.4,41.6"
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Conditional Split"
-          TopLeft="351.685720234015,25.2352944715625" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable.Paths[JsonSourceOutput]"
-          TopLeft="263.885714869597,43.3588238457908">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="87.8000053644182,0"
-              Start="0,0"
-              End="80.3000053644182,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="80.3000053644182,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="152.8,41.6"
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Derived Column"
-          TopLeft="715.000012176378,107.823530923949" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable.Paths[Borr_First_Last_Name_NotTest]"
-          TopLeft="428.885720234015,66.8352944715625">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="362.514291942363,40.9882364523865"
-              Start="0,0"
-              End="362.514291942363,33.4882364523865">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4941182261932" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4941182261932"
-                    Point2="0,20.4941182261932"
-                    Point3="4,20.4941182261932" />
-                  <mssgle:LineSegment
-                    End="358.514291942363,20.4941182261932" />
-                  <mssgle:CubicBezierSegment
-                    Point1="358.514291942363,20.4941182261932"
-                    Point2="362.514291942363,20.4941182261932"
-                    Point3="362.514291942363,24.4941182261932" />
-                  <mssgle:LineSegment
-                    End="362.514291942363,33.4882364523865" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="112.025759252431,25.4941182261932,138.4627734375,10.7841796875"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="112.8,41.6"
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Lookup"
-          TopLeft="256.714289473028,136.117648967822" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable.Paths[Derived Column Output]"
-          TopLeft="715.000012176378,128.623530923949">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-345.48572270335,28.2941180438731"
-              Start="0,0"
-              End="-337.98572270335,28.2941180438731">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-168.742861351675,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-168.742861351675,0"
-                    Point2="-172.742861351675,0"
-                    Point3="-172.742861351675,4" />
-                  <mssgle:LineSegment
-                    End="-172.742861351675,24.2941180438731" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-172.742861351675,24.2941180438731"
-                    Point2="-172.742861351675,28.2941180438731"
-                    Point3="-176.742861351675,28.2941180438731" />
-                  <mssgle:LineSegment
-                    End="-337.98572270335,28.2941180438731" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="142.4,41.6"
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Fuzzy Lookup"
-          TopLeft="95.0857158913905,204.941179344811" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable.Paths[Lookup Match Output]"
-          TopLeft="313.114289473028,177.717648967822">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-146.828573581637,27.2235303769887"
-              Start="0,0"
-              End="-146.828573581637,19.7235303769887">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,9.61176518849436" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,9.61176518849436"
-                    Point2="0,13.6117651884944"
-                    Point3="-4,13.6117651884944" />
-                  <mssgle:LineSegment
-                    End="-142.828573581637,13.6117651884944" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-142.828573581637,13.6117651884944"
-                    Point2="-146.828573581637,13.6117651884944"
-                    Point3="-146.828573581637,17.6117651884944" />
-                  <mssgle:LineSegment
-                    End="-146.828573581637,19.7235303769887" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-121.605673509569,18.6117651884944,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable.Paths[Fuzzy Lookup Output]"
-          TopLeft="166.28571589139,246.541179344811">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-22.8888892105643,120.018302538761"
-              Start="0,0"
-              End="-22.8888892105643,112.518302538761">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,56.0091512693806" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,56.0091512693806"
-                    Point2="0,60.0091512693806"
-                    Point3="-4,60.0091512693806" />
-                  <mssgle:LineSegment
-                    End="-18.8888892105643,60.0091512693806" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-18.8888892105643,60.0091512693806"
-                    Point2="-22.8888892105643,60.0091512693806"
-                    Point3="-22.8888892105643,64.0091512693806" />
-                  <mssgle:LineSegment
-                    End="-22.8888892105643,112.518302538761" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
           Size="170.4,41.6"
           Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\OLE DB Destination"
           TopLeft="361.514291857213,375.470593501127" />
+        <NodeLayout
+          Size="142.4,41.6"
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Fuzzy Lookup"
+          TopLeft="70.085715465643,214.117650061743" />
+        <NodeLayout
+          Size="154.4,41.6"
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Conditional Split"
+          TopLeft="351.685720234015,25.2352944715625" />
         <EdgeLayout
           Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable.Paths[Row Count Output 1]"
           TopLeft="208.196826680826,387.359481883572">
@@ -15299,6 +15187,156 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable.Paths[Lookup Match Output]"
+          TopLeft="295.647622806361,177.717648967822">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-154.361907340718,36.4000010939208"
+              Start="0,0"
+              End="-154.361907340718,28.9000010939208">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.8654549922026" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.8654549922026"
+                    Point2="0,14.8654549922026"
+                    Point3="-4,14.8654549922026" />
+                  <mssgle:LineSegment
+                    End="-150.361907340718,14.8654549922026" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-150.361907340718,14.8654549922026"
+                    Point2="-154.361907340718,14.8654549922026"
+                    Point3="-154.361907340718,18.8654549922026" />
+                  <mssgle:LineSegment
+                    End="-154.361907340718,28.9000010939208" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-125.372340389109,19.8654549922026,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable.Paths[JsonSourceOutput]"
+          TopLeft="263.885714869597,43.3588238457908">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="87.8000053644182,0"
+              Start="0,0"
+              End="80.3000053644182,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="80.3000053644182,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable.Paths[Fuzzy Lookup Output]"
+          TopLeft="142.341271073235,255.717650061743">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,110.841831821829"
+              Start="0,0"
+              End="0,103.341831821829">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,103.341831821829" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable.Paths[Derived Column Output]"
+          TopLeft="715.000012176378,128.623530923949">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-345.48572270335,28.2941180438731"
+              Start="0,0"
+              End="-337.98572270335,28.2941180438731">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-168.742861351675,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-168.742861351675,0"
+                    Point2="-172.742861351675,0"
+                    Point3="-172.742861351675,4" />
+                  <mssgle:LineSegment
+                    End="-172.742861351675,24.2941180438731" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-172.742861351675,24.2941180438731"
+                    Point2="-172.742861351675,28.2941180438731"
+                    Point3="-176.742861351675,28.2941180438731" />
+                  <mssgle:LineSegment
+                    End="-337.98572270335,28.2941180438731" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable.Paths[Borr_First_Last_Name_NotTest]"
+          TopLeft="428.885720234015,66.8352944715625">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="362.514291942363,40.9882364523865"
+              Start="0,0"
+              End="362.514291942363,33.4882364523865">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4941182261932" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4941182261932"
+                    Point2="0,20.4941182261932"
+                    Point3="4,20.4941182261932" />
+                  <mssgle:LineSegment
+                    End="358.514291942363,20.4941182261932" />
+                  <mssgle:CubicBezierSegment
+                    Point1="358.514291942363,20.4941182261932"
+                    Point2="362.514291942363,20.4941182261932"
+                    Point3="362.514291942363,24.4941182261932" />
+                  <mssgle:LineSegment
+                    End="362.514291942363,33.4882364523865" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="112.025759252431,25.4941182261932,138.4627734375,10.7841796875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -15318,7 +15356,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -15326,7 +15364,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Fuzzy Lookup">
+    design-time-name="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -15339,7 +15377,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\OLE DB Destination">
+    design-time-name="Package\Sequence Container\Data Flow Task_LendingPad_From_JSON_To_StagingTable\Fuzzy Lookup">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
