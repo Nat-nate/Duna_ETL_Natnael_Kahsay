@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-PEK1K8J"
   DTS:CreatorName="DESKTOP-PEK1K8J\natik"
-  DTS:DTSID="{293E783B-4BDA-49D4-A7CE-D771B553D0CE}"
+  DTS:DTSID="{9D0BE376-C6CC-4AAA-B9E4-7E17007ABF58}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.123"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Pkg_Natnael_Kahsay_LendingPad"
+  DTS:ObjectName="Pkg_Natnael_Kahsay_SimpleNexus"
   DTS:PackageType="5"
-  DTS:VersionBuild="227"
-  DTS:VersionGUID="{8311E266-EE25-4374-A27F-2755A2FC5324}">
+  DTS:VersionBuild="226"
+  DTS:VersionGUID="{0747B7BE-C9F4-4C93-8E00-A648CF2AE7C6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-PEK1K8J.STGQL]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{3A52B90C-47C2-4DE3-BDCC-169CBC9A8E2A}"
+      DTS:DTSID="{014D4A7B-4226-447C-A926-16786EF5DF08}"
       DTS:ObjectName="DESKTOP-PEK1K8J.STGQL">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -29,7 +29,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[FFCM_CrossWalk]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{CD667AD1-8789-450E-A4DE-5149723DE76A}"
+      DTS:DTSID="{0C4AD239-56C4-4681-B3CC-A0D24BA703CE}"
       DTS:ObjectName="FFCM_CrossWalk">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -49,7 +49,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MortgageInsuranceCompany"
-              DTS:DTSID="{7B9B7A65-8296-4F41-9056-3E6D7B8302B4}"
+              DTS:DTSID="{33B37FE7-2FBE-4A56-988D-B7EBC7C82097}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,7 +58,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Insurance_Company"
-              DTS:DTSID="{84102D2F-06AC-4806-A7DF-020D5C96098A}"
+              DTS:DTSID="{B7159B96-FECD-4F74-801B-D3E83974AA22}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -67,7 +67,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LendingPad.json]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{5E3B33DF-8391-4732-934E-BA5F9559BAC7}"
+      DTS:DTSID="{5B15B42A-001B-4BED-B7C1-502B73D45441}"
       DTS:ObjectName="LendingPad.json">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -79,7 +79,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="3"
-      DTS:DTSID="{0F6441DA-23DC-44A8-8951-310AED0B04E7}"
+      DTS:DTSID="{B693A869-B8C1-4D8B-AE6E-A62BA5CB4B49}"
       DTS:ObjectName="Parameter">
       <DTS:Property
         DTS:DataType="3"
@@ -89,7 +89,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{7D09C964-B157-4A15-846E-CC41FF2C4488}"
+      DTS:DTSID="{C69AFC09-86E9-4D77-8842-F1684120DCB8}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="Var7zip">
@@ -98,16 +98,16 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{E06AC8E1-D489-4088-A923-1B27766E48F9}"
+      DTS:DTSID="{BEEA638E-CB96-4C18-8FB1-0EA9182C3681}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarArchivePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\BulkFiles\ArchivedFiles</DTS:VariableValue>
+        DTS:DataType="8">C:\BulkFiles\SimpleNexus\ArchiveFile</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{DA33FE2B-0B04-4685-BFE9-C3C2F90CB3D2}"
+      DTS:DTSID="{3CD67082-C161-4E30-9D05-792D8AE12D77}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
@@ -117,16 +117,16 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C55DA1E7-6533-4914-AEBC-C2B5F9A475DD}"
+      DTS:DTSID="{87C42C28-E846-48DC-A8BF-9A3E961BC7DD}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarFileName">
       <DTS:VariableValue
-        DTS:DataType="8">LendingPad.zip</DTS:VariableValue>
+        DTS:DataType="8">SimpleNexus.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{65FE89F1-C8D2-4E4E-BE2E-332A4618BE9D}"
+      DTS:DTSID="{CF332C37-4A59-4486-9950-F887BA066347}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarFromEmail">
@@ -135,16 +135,16 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A445B0E7-05DA-45DA-B394-95FB14451552}"
+      DTS:DTSID="{2A203566-30EE-4F86-8947-AB47AD71B489}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarFTPNewFile">
       <DTS:VariableValue
-        DTS:DataType="8">LendingPad.JSON</DTS:VariableValue>
+        DTS:DataType="8">SimpleNexus.bak</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{F345F62E-016D-402E-9440-88C29F5B826C}"
+      DTS:DTSID="{A1276375-F4BA-4CB9-850A-1EC379045873}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="VarIsFileExistsFlag">
@@ -153,7 +153,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{AC3FE725-B7DD-4867-9FC6-79A56766AC36}"
+      DTS:DTSID="{88A6BD83-2F04-447A-8056-C61D456A650E}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarLastModifiedDate">
@@ -162,16 +162,16 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A4FD5B29-95EA-42D9-ABB1-5DB50B27A558}"
+      DTS:DTSID="{659E6C6E-A0F8-4853-B774-611C83D3CC54}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarLocalPath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\BulkFiles\ZippedFile\</DTS:VariableValue>
+        DTS:DataType="8">C:\BulkFiles\SimpleNexus\Zipped\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{772DB251-48EA-49A0-B5F9-27E145A6D87B}"
+      DTS:DTSID="{A2DBAE9F-C704-48B7-B742-BE7382EBD054}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarPassword">
@@ -180,27 +180,27 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{639D142D-E9CC-48C4-99B5-16D5C73C91D2}"
+      DTS:DTSID="{095EDA5D-8D91-4ED1-A01C-5EB468AA3088}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarRemoteFilePath">
       <DTS:VariableValue
-        DTS:DataType="8">/drivehqshare/tejamo/QuickenLoans/LendingPad.zip</DTS:VariableValue>
+        DTS:DataType="8">/drivehqshare/tejamo/QuickenLoans/SimpleNexus.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A0037406-9633-47B8-B6EC-C577EEA756F5}"
+      DTS:DTSID="{799933DF-CFEF-4F3C-BEEF-5E974EF364D0}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::VarArchivePath]+&quot;\\&quot; +REPLACE( @[User::VarFileName],&quot;.zip&quot;,&quot;_&quot;)+REPLACE(SUBSTRING(REPLACE((DT_WSTR,50)GETDATE(),&quot; &quot;,&quot;-&quot;),1,19),&quot;:&quot;,&quot;-&quot;)+&quot;.zip&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarRenameArchiveFile">
       <DTS:VariableValue
-        DTS:DataType="8">C:\BulkFiles\ArchivedFiles\LendingPad_2020-09-22-19-48-56.zip</DTS:VariableValue>
+        DTS:DataType="8">C:\BulkFiles\SimpleNexus\ArchiveFile\SimpleNexus_2020-09-22-18-53-18.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{84245EA0-80FA-4341-93CD-F36124463044}"
+      DTS:DTSID="{90A165B4-7576-4125-94F5-ECFA66DBDF26}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="VarRowCount">
@@ -209,18 +209,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{3BD99981-5F39-4E65-98B5-578CBDC86B51}"
+      DTS:DTSID="{2AB566CC-51EE-48E0-A0C2-9FB45667BF4A}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/22/2020 7:48:56 PM</DTS:VariableValue>
+        DTS:DataType="7">9/22/2020 6:53:18 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{CFEDC232-29AE-40BA-B482-9D94D4B33ABF}"
+      DTS:DTSID="{DE426247-9972-4D0B-8F2B-1A7B86493025}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarSmtpClient">
@@ -229,7 +229,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D0CEE1C6-6D5D-4FF9-B837-8312CED0D2B1}"
+      DTS:DTSID="{1F7E408B-076E-4D3F-A71D-49002B2458AA}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarSmtpServerPort">
@@ -238,16 +238,16 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{529DB7EC-F0FA-483F-B47B-7F1BDD704BF3}"
+      DTS:DTSID="{D8FBB060-4773-423A-8C4D-214F4BADA25F}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarSourceName">
       <DTS:VariableValue
-        DTS:DataType="8">Lendingpad</DTS:VariableValue>
+        DTS:DataType="8">SimpleNexus</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{7606DBF3-F7C7-415C-B2E7-8EAD754167C7}"
+      DTS:DTSID="{A2C6CD63-3B8C-4355-939A-F48A32BB318A}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarSubject">
@@ -256,7 +256,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{BD1F9444-4FB2-4637-82F0-AE45B06ECB77}"
+      DTS:DTSID="{EA76E805-327C-4B81-8142-74743A928415}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="VarTime">
@@ -265,18 +265,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{F8C0C0E9-10E1-4242-AE6F-7BABBC93A8A4}"
+      DTS:DTSID="{B9DDC9E0-B134-41D3-B379-2EE185DC601E}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/22/2020 7:48:56 PM</DTS:VariableValue>
+        DTS:DataType="7">9/22/2020 6:53:18 PM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A8D923AE-C860-4724-A104-2368766F61DA}"
+      DTS:DTSID="{6FA72590-0B66-42ED-BADC-C0A8DEB9D0B2}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarToEmail">
@@ -285,45 +285,85 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{BACE98E7-E452-471A-8DE2-EB6A317B4B07}"
+      DTS:DTSID="{6F6CBEE8-07A7-4D7E-8A5C-22609D38C951}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="@[User::VarUnzipFolder] + &quot;\\&quot; + @[User::VarFTPNewFile]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarUnzipFilePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\BulkFiles\UnzippedFile\LendingPad.json</DTS:VariableValue>
+        DTS:DataType="8">C:\BulkFiles\SimpleNexus\UnzippedFile\SimpleNexus.bak</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{1B9BD1F7-B8DA-4559-AD2C-5E0E47A91214}"
+      DTS:DTSID="{3AB65CBC-97B0-4AE9-B954-7A47A5E12C9D}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarUnzipFolder">
       <DTS:VariableValue
-        DTS:DataType="8">C:\BulkFiles\UnzippedFile</DTS:VariableValue>
+        DTS:DataType="8">C:\BulkFiles\SimpleNexus\UnzippedFile</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{3CBD4F9F-88C5-4D59-AD8B-EB346A762D57}"
+      DTS:DTSID="{66046236-2F53-4C7F-85A7-574C02A85939}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::VarLocalPath]+  @[User::VarFileName]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarZipFilePath">
       <DTS:VariableValue
-        DTS:DataType="8">C:\BulkFiles\ZippedFile\LendingPad.zip</DTS:VariableValue>
+        DTS:DataType="8">C:\BulkFiles\SimpleNexus\Zipped\SimpleNexus.zip</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
+      DTS:refId="Package\Execute Process Task_UnzipFiles"
+      DTS:CreationName="Microsoft.ExecuteProcess"
+      DTS:Description="Execute Process Task"
+      DTS:DTSID="{8277B612-918E-4C40-A4AA-E14DCC9C4AED}"
+      DTS:ExecutableType="Microsoft.ExecuteProcess"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute Process Task_UnzipFiles"
+      DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:PropertyExpression
+        DTS:Name="Arguments">"X "   +   @[User::VarZipFilePath]  +   " -o" +    @[User::VarUnzipFolder]</DTS:PropertyExpression>
+      <DTS:PropertyExpression
+        DTS:Name="Executable">@[User::Var7zip]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <ExecuteProcessData
+          Executable="C:\Program Files\7-Zip\7z.exe"
+          Arguments="X C:\BulkFiles\SimpleNexus\Zipped\SimpleNexus.zip -oC:\BulkFiles\SimpleNexus\UnzippedFile" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{3400D82D-139C-4738-954B-73D3B481A251}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{014D4A7B-4226-447C-A926-16786EF5DF08}" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
       DTS:refId="Package\Execute SQL Task_LOGTable"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{D3CB3C47-32E3-4B57-80B8-8D0FDD0416CF}"
+      DTS:Disabled="True"
+      DTS:DTSID="{5B39844A-C7F4-4924-914B-CA75F2B4E44C}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task_LOGTable"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="2">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -375,101 +415,31 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Foreach Loop Container"
-      DTS:CreationName="STOCK:FOREACHLOOP"
-      DTS:Description="Foreach Loop Container"
-      DTS:DTSID="{D3F2DC75-B822-4146-8940-4D5A97CA197E}"
-      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:refId="Package\FST Rename and Move Files"
+      DTS:CreationName="Microsoft.FileSystemTask"
+      DTS:Description="C:\BulkFiles\ArchivedFiles\LendingPad_2020_9_21.zip"
+      DTS:DTSID="{FDC86057-9382-4772-923E-B5321FF5B1B2}"
+      DTS:ExecutableType="Microsoft.FileSystemTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Foreach Loop Container">
-      <DTS:ForEachEnumerator
-        DTS:CreationName="Microsoft.ForEachFileEnumerator"
-        DTS:DTSID="{F1337557-8F0A-4DE8-B2D4-77DE1F205D53}"
-        DTS:ObjectName="{F1337557-8F0A-4DE8-B2D4-77DE1F205D53}">
-        <DTS:PropertyExpression
-          DTS:Name="Directory">@[User::VarLocalPath]</DTS:PropertyExpression>
-        <DTS:ObjectData>
-          <ForEachFileEnumeratorProperties>
-            <FEFEProperty
-              Folder="C:\BulkFiles\ZippedFile\" />
-            <FEFEProperty
-              FileSpec="*.zip" />
-            <FEFEProperty
-              FileNameRetrievalType="1" />
-            <FEFEProperty
-              Recurse="0" />
-          </ForEachFileEnumeratorProperties>
-        </DTS:ObjectData>
-      </DTS:ForEachEnumerator>
+      DTS:ObjectName="FST Rename and Move Files"
+      DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="1">
       <DTS:Variables />
-      <DTS:Executables>
-        <DTS:Executable
-          DTS:refId="Package\Foreach Loop Container\Execute Process Task_UnzipFiles"
-          DTS:CreationName="Microsoft.ExecuteProcess"
-          DTS:Description="Execute Process Task"
-          DTS:DTSID="{CD778C0A-486C-42DD-BA22-A58999D597AE}"
-          DTS:ExecutableType="Microsoft.ExecuteProcess"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="Execute Process Task_UnzipFiles"
-          DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
-          <DTS:Variables />
-          <DTS:PropertyExpression
-            DTS:Name="Arguments">"X "   +   @[User::VarZipFilePath]  +   " -o" +    @[User::VarUnzipFolder]</DTS:PropertyExpression>
-          <DTS:PropertyExpression
-            DTS:Name="Executable">@[User::Var7zip]</DTS:PropertyExpression>
-          <DTS:ObjectData>
-            <ExecuteProcessData
-              Executable="C:\Program Files\7-Zip\7z.exe"
-              Arguments="X C:\BulkFiles\ZippedFile\LendingPad.zip -oC:\BulkFiles\UnzippedFile" />
-          </DTS:ObjectData>
-        </DTS:Executable>
-        <DTS:Executable
-          DTS:refId="Package\Foreach Loop Container\FST Rename and Move Files"
-          DTS:CreationName="Microsoft.FileSystemTask"
-          DTS:Description="C:\BulkFiles\ArchivedFiles\LendingPad_2020_9_21.zip"
-          DTS:DTSID="{A0554AE7-F476-44F9-856B-6B0905D0176D}"
-          DTS:ExecutableType="Microsoft.FileSystemTask"
-          DTS:LocaleID="-1"
-          DTS:ObjectName="FST Rename and Move Files"
-          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
-          <DTS:Variables />
-          <DTS:ObjectData>
-            <FileSystemData
-              TaskOperationType="MoveFile"
-              TaskOverwriteDestFile="True"
-              TaskSourcePath="User::VarZipFilePath"
-              TaskIsSourceVariable="True"
-              TaskDestinationPath="User::VarRenameArchiveFile"
-              TaskIsDestinationVariable="True" />
-          </DTS:ObjectData>
-        </DTS:Executable>
-      </DTS:Executables>
-      <DTS:PrecedenceConstraints>
-        <DTS:PrecedenceConstraint
-          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
-          DTS:CreationName=""
-          DTS:DTSID="{B2F24820-A9E2-4846-A544-1267271ACC7B}"
-          DTS:From="Package\Foreach Loop Container\Execute Process Task_UnzipFiles"
-          DTS:LogicalAnd="True"
-          DTS:ObjectName="Constraint"
-          DTS:To="Package\Foreach Loop Container\FST Rename and Move Files" />
-      </DTS:PrecedenceConstraints>
-      <DTS:ForEachVariableMappings>
-        <DTS:ForEachVariableMapping
-          DTS:CreationName=""
-          DTS:DTSID="{6D4C4EA6-5BE2-47D2-B240-650708115501}"
-          DTS:ObjectName="{6D4C4EA6-5BE2-47D2-B240-650708115501}"
-          DTS:ValueIndex="0"
-          DTS:VariableName="User::VarFileName" />
-      </DTS:ForEachVariableMappings>
+      <DTS:ObjectData>
+        <FileSystemData
+          TaskOperationType="MoveFile"
+          TaskOverwriteDestFile="True"
+          TaskSourcePath="User::VarZipFilePath"
+          TaskIsSourceVariable="True"
+          TaskDestinationPath="User::VarRenameArchiveFile"
+          TaskIsDestinationVariable="True" />
+      </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\FTP Task"
       DTS:CreationName="Microsoft.FtpTask"
       DTS:Description="FTP Task"
-      DTS:DTSID="{037022F4-48D5-49B7-82C5-ACF965CE5240}"
+      DTS:DTSID="{37E5ED0F-E4C0-44BD-920D-88769EA0C2D0}"
       DTS:ExecutableType="Microsoft.FtpTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="FTP Task"
@@ -491,7 +461,7 @@
       DTS:refId="Package\Script Task_CheckFileExistence"
       DTS:CreationName="Microsoft.ScriptTask"
       DTS:Description="Script Task"
-      DTS:DTSID="{B24BDD9F-D1A9-4D15-B6AE-2AFF23DE2847}"
+      DTS:DTSID="{094CA94B-3442-414B-9C77-E36078761B30}"
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Script Task_CheckFileExistence"
@@ -1121,11 +1091,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:refId="Package\Script Task_SendEmail"
       DTS:CreationName="Microsoft.ScriptTask"
       DTS:Description="Script Task"
-      DTS:DTSID="{ec89626b-a958-4639-a0f9-883fb28b0a40}"
+      DTS:DTSID="{63A4D02B-A644-4155-95F2-B9FDF9E6FB54}"
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Script Task_SendEmail"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <ScriptProject
@@ -1794,7 +1764,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:refId="Package\Sequence Container_LendingPad"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:DTSID="{00AF581D-FD7E-44E8-9A68-84B7D6103C88}"
+      DTS:Disabled="True"
+      DTS:DTSID="{831D585B-79A2-44CE-A0F7-B8870E4016CA}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Sequence Container_LendingPad">
@@ -1804,7 +1775,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:refId="Package\Sequence Container_LendingPad\Data Flow Task_LendingPad_From_JSON_To_StagingTable"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{B36A3D25-CF35-4D91-89B5-3BCB73236ED3}"
+          DTS:DTSID="{CECC84B9-5062-4F5E-86AA-EFE52F81C9CE}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Data Flow Task_LendingPad_From_JSON_To_StagingTable"
@@ -13755,16 +13726,16 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package\Sequence Container_LendingPad\Execute SQL Task_Delete_StagingTable"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{245258A0-429F-480A-8039-2333B8988176}"
+          DTS:DTSID="{82D26409-A700-430F-80F2-C864600810F0}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task_Delete_StagingTable"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{3A52B90C-47C2-4DE3-BDCC-169CBC9A8E2A}"
+              SQLTask:Connection="{014D4A7B-4226-447C-A926-16786EF5DF08}"
               SQLTask:SqlStatementSource="DELETE From [dbo].[Stg_Natnael_Kahsay_QL]&#xA;WHERE SourceName='LendingPad'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -13772,16 +13743,16 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package\Sequence Container_LendingPad\Execute SQL Task_IncrementalLoad"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{E33BBB4A-4A6C-46BB-A70E-E8FAF5436125}"
+          DTS:DTSID="{2AC2E547-143F-4395-8FD4-44B3D0D30815}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task_IncrementalLoad"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{3A52B90C-47C2-4DE3-BDCC-169CBC9A8E2A}"
+              SQLTask:Connection="{014D4A7B-4226-447C-A926-16786EF5DF08}"
               SQLTask:SqlStatementSource=" SELECT SourceName&#xA;,MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;        FROM [dbo].[Stg_Natnael_Kahsay_QL]    &#xA;&#x9;Where [SourceName]= ?   &#xA;        Group by  SourceName"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -13803,12 +13774,12 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package\Sequence Container_LendingPad\File System Task_Delete_UnzippedFile"
           DTS:CreationName="Microsoft.FileSystemTask"
           DTS:Description="File System Task"
-          DTS:DTSID="{DC8610DF-32C1-4CAA-8026-CE7881684A50}"
+          DTS:DTSID="{DB09D3DD-6DD2-4AAA-9734-C01405B4DD59}"
           DTS:ExecutableType="Microsoft.FileSystemTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="File System Task_Delete_UnzippedFile"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
@@ -13822,7 +13793,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container_LendingPad.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{1240CD3A-0388-436D-AC95-847204B2D985}"
+          DTS:DTSID="{BC8FB0B4-0DAD-4D8E-9151-DBAF89ABE271}"
           DTS:From="Package\Sequence Container_LendingPad\Execute SQL Task_Delete_StagingTable"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -13830,7 +13801,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container_LendingPad.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
-          DTS:DTSID="{B14D101E-85C0-4119-B561-A4FA8DA9EE06}"
+          DTS:DTSID="{E2DCAD19-C6A7-42A6-B7A6-4701CB925582}"
           DTS:From="Package\Sequence Container_LendingPad\Data Flow Task_LendingPad_From_JSON_To_StagingTable"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
@@ -13838,7 +13809,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container_LendingPad.PrecedenceConstraints[Constraint 2]"
           DTS:CreationName=""
-          DTS:DTSID="{C0068A99-1A83-4EFE-8FEC-8DA6632BC5BD}"
+          DTS:DTSID="{3658AE4B-9532-44AD-BDE8-5C3842897FA7}"
           DTS:From="Package\Sequence Container_LendingPad\Execute SQL Task_IncrementalLoad"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 2"
@@ -13850,7 +13821,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{FBE9A6CB-4F70-4A11-BEE0-85A427F7AE8F}"
+      DTS:DTSID="{F0010C9C-E5F9-4544-87CC-A0D0848A8F36}"
       DTS:From="Package\FTP Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -13858,7 +13829,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{2541B97E-53BD-4BB1-9F82-38C6FD389757}"
+      DTS:DTSID="{3C34DC42-C3BB-4A0D-A898-73945A7FD87F}"
       DTS:EvalOp="3"
       DTS:Expression="@[User::VarIsFileExistsFlag]==0"
       DTS:From="Package\Script Task_CheckFileExistence"
@@ -13868,35 +13839,41 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{753B9919-8DF8-42BE-9FC6-6C378C03541B}"
-      DTS:From="Package\Foreach Loop Container"
+      DTS:DTSID="{30E70343-FE89-4050-A750-EE45A34AC834}"
+      DTS:From="Package\Script Task_CheckFileExistence"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
-      DTS:To="Package\Sequence Container_LendingPad" />
+      DTS:To="Package\Execute Process Task_UnzipFiles" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{695CE0B8-9968-426B-AA6F-A75C96AB595A}"
-      DTS:EvalOp="3"
-      DTS:Expression="@[User::VarIsFileExistsFlag]==1"
-      DTS:From="Package\Script Task_CheckFileExistence"
+      DTS:DTSID="{EB48B1BF-E5E2-4623-8FE5-0D61A77FE5F0}"
+      DTS:From="Package\Execute Process Task_UnzipFiles"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
-      DTS:To="Package\Foreach Loop Container" />
+      DTS:To="Package\FST Rename and Move Files" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
       DTS:CreationName=""
-      DTS:DTSID="{19B9E0C3-E674-4B51-8FB2-2604A354EA28}"
+      DTS:DTSID="{E3422C14-4AC4-42F0-86A4-26D372A41FE0}"
       DTS:From="Package\Sequence Container_LendingPad"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
       DTS:To="Package\Execute SQL Task_LOGTable" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{5BA2C450-B2CB-4BB3-B658-99CC28C8973B}"
+      DTS:From="Package\FST Rename and Move Files"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Execute SQL Task" />
   </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
       DTS:CreationName="OnError"
-      DTS:DTSID="{47964495-66A4-4609-AB27-05BE92901F5D}"
+      DTS:DTSID="{74926FA8-7586-4525-833B-F933BE22631A}"
       DTS:EventID="0"
       DTS:EventName="OnError"
       DTS:LocaleID="-1">
@@ -13904,7 +13881,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{9BD18EEA-8F04-4036-8EE2-80A7379AA3D9}"
+          DTS:DTSID="{51C0C4BB-73E2-42C8-AA3C-725CE722C4CA}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -13917,7 +13894,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task_ErrorLOG"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{9E83F8F7-560C-4DF5-A01E-73A5C861C3A4}"
+          DTS:DTSID="{EDBB153E-B013-4435-B239-BCF3E6104CBB}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task_ErrorLOG"
@@ -13976,7 +13953,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Script Task_SendEmail"
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Script Task"
-          DTS:DTSID="{9C4B7172-6777-41BA-A3BA-08DC79AB1AD7}"
+          DTS:DTSID="{66F6D124-342A-42DB-9AC5-68BECD00BA23}"
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Script Task_SendEmail">
@@ -14644,7 +14621,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:PrecedenceConstraint
           DTS:refId="Package.EventHandlers[OnError].PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{F0D3B569-592C-4DC9-8FCD-4B9551656F45}"
+          DTS:DTSID="{E32B5A6B-AC4A-4007-B37A-A151BB6112DF}"
           DTS:From="Package.EventHandlers[OnError]\Execute SQL Task_ErrorLOG"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -14654,7 +14631,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnPostExecute]"
       DTS:CreationName="OnPostExecute"
-      DTS:DTSID="{D684EA42-377C-433A-B137-22D7DD962966}"
+      DTS:DTSID="{4F5F6F3B-8DA7-4352-9659-D8A0FCC321B8}"
       DTS:EventID="0"
       DTS:EventName="OnPostExecute"
       DTS:LocaleID="-1">
@@ -14662,7 +14639,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{18D55BB6-BEA5-4A18-9E1E-DBBD314087BB}"
+          DTS:DTSID="{D0189414-0BAA-4564-AE92-306533A879B1}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -14686,58 +14663,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
+          Size="232,41.6"
+          Id="Package\Execute Process Task_UnzipFiles"
+          TopLeft="36.6428572644992,263.917651702624" />
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Execute SQL Task"
+          TopLeft="65.9714296540435,441.858826854073" />
+        <NodeLayout
           Size="262.4,56.8"
           Id="Package\Execute SQL Task_LOGTable"
-          TopLeft="75.7142870036934,640.341185361374" />
-        <NodeLayout
-          Size="232,41.6"
-          Id="Package\Foreach Loop Container\Execute Process Task_UnzipFiles"
-          TopLeft="20.5000002554485,22.2117701111374" />
+          TopLeft="128.571430760988,640.341185361374" />
         <NodeLayout
           Size="211.2,41.6"
-          Id="Package\Foreach Loop Container\FST Rename and Move Files"
-          TopLeft="25.1142927087085,116.894124425076" />
-        <EdgeLayout
-          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
-          TopLeft="133.607146482078,63.8117701111374">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,53.082354313939"
-              Start="0,0"
-              End="0,45.582354313939">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,45.582354313939" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="269.6,213.6"
-          Size="269.6,256.8"
-          Id="Package\Foreach Loop Container"
-          TopLeft="24.2857146992977,253.117650608703" />
+          Id="Package\FST Rename and Move Files"
+          TopLeft="36.2571496326102,356.30588833733" />
         <NodeLayout
           Size="121.6,41.6"
           Id="Package\FTP Task"
-          TopLeft="29.2857147844471,16.8235296477086" />
+          TopLeft="82.1428585417417,16.8235296477086" />
         <NodeLayout
           Size="224.8,41.6"
           Id="Package\Script Task_CheckFileExistence"
-          TopLeft="3.57142863224999,146.823531470909" />
+          TopLeft="56.4285723895446,146.823531470909" />
         <NodeLayout
           Size="184.8,41.6"
           Id="Package\Script Task_SendEmail"
-          TopLeft="278.571433315472,67.2941185908327" />
+          TopLeft="331.428577072767,67.2941185908327" />
         <NodeLayout
           Size="356.8,41.6"
           Id="Package\Sequence Container_LendingPad\Data Flow Task_LendingPad_From_JSON_To_StagingTable"
@@ -14835,9 +14787,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,8.4647063488779" />
+                    End="0,8.46470634887792" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,8.4647063488779"
+                    Point1="0,8.46470634887792"
                     Point2="0,12.4647063488779"
                     Point3="4,12.4647063488779" />
                   <mssgle:LineSegment
@@ -14862,33 +14814,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           PanelSize="388.8,378.4"
           Size="388.8,421.6"
           Id="Package\Sequence Container_LendingPad"
-          TopLeft="438.142864331907,281.952943257065" />
+          TopLeft="491.000008089202,281.952943257065" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="90.0857147844471,58.4235296477086">
+          TopLeft="142.942858541742,58.4235296477086">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-10.2476194855304,88.4000018232"
+              EndConnector="-10.2476194855305,88.4000018232004"
               Start="0,0"
-              End="-10.2476194855304,80.9000018232">
+              End="-10.2476194855305,80.9000018232004">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.6651600967898" />
+                    End="0,48.6651600967901" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,48.6651600967898"
-                    Point2="0,52.6651600967898"
-                    Point3="-4,52.6651600967898" />
+                    Point1="0,48.6651600967901"
+                    Point2="0,52.6651600967901"
+                    Point3="-4,52.6651600967901" />
                   <mssgle:LineSegment
-                    End="-6.24761948553041,52.6651600967898" />
+                    End="-6.24761948553046,52.6651600967901" />
                   <mssgle:CubicBezierSegment
-                    Point1="-6.24761948553041,52.6651600967898"
-                    Point2="-10.2476194855304,52.6651600967898"
-                    Point3="-10.2476194855304,56.6651600967898" />
+                    Point1="-6.24761948553046,52.6651600967901"
+                    Point2="-10.2476194855305,52.6651600967901"
+                    Point3="-10.2476194855305,56.6651600967901" />
                   <mssgle:LineSegment
-                    End="-10.2476194855304,80.9000018232" />
+                    End="-10.2476194855305,80.9000018232004" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14899,7 +14851,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="152.104761965583,146.823531470909">
+          TopLeft="204.961905722878,146.823531470909">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -14934,67 +14886,65 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="115.97142863225,188.423531470909">
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="168.828572389545,188.423531470909">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="43.1142860670477,64.6941191377945"
+              EndConnector="-16.1857151250454,75.4941202317151"
               Start="0,0"
-              End="43.1142860670477,57.1941191377945">
+              End="-16.1857151250454,67.9941202317151">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,28.3470595688973" />
+                    End="0,33.7470601158576" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,28.3470595688973"
-                    Point2="0,32.3470595688973"
-                    Point3="4,32.3470595688973" />
+                    Point1="0,33.7470601158576"
+                    Point2="0,37.7470601158576"
+                    Point3="-4,37.7470601158576" />
                   <mssgle:LineSegment
-                    End="39.1142860670477,32.3470595688973" />
+                    End="-12.1857151250454,37.7470601158576" />
                   <mssgle:CubicBezierSegment
-                    Point1="39.1142860670477,32.3470595688973"
-                    Point2="43.1142860670477,32.3470595688973"
-                    Point3="43.1142860670477,36.3470595688973" />
+                    Point1="-12.1857151250454,37.7470601158576"
+                    Point2="-16.1857151250454,37.7470601158576"
+                    Point3="-16.1857151250454,41.7470601158576" />
                   <mssgle:LineSegment
-                    End="43.1142860670477,57.1941191377945" />
+                    End="-16.1857151250454,67.9941202317151" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="13.5571430335239,37.3470595688973,16,16"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="293.885714699298,381.517650608703">
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="152.642857264499,305.517651702624">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="144.257149632609,42.3019593150287"
+              EndConnector="-10.785707631889,50.7882366347062"
               Start="0,0"
-              End="136.757149632609,42.3019593150287">
+              End="-10.785707631889,43.2882366347062">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="82.2270523890946,0" />
+                    End="0,21.3941183173531" />
                   <mssgle:CubicBezierSegment
-                    Point1="82.2270523890946,0"
-                    Point2="86.2270523890946,0"
-                    Point3="86.2270523890946,4" />
+                    Point1="0,21.3941183173531"
+                    Point2="0,25.3941183173531"
+                    Point3="-4,25.3941183173531" />
                   <mssgle:LineSegment
-                    End="86.2270523890946,38.3019593150287" />
+                    End="-6.78570763188901,25.3941183173531" />
                   <mssgle:CubicBezierSegment
-                    Point1="86.2270523890946,38.3019593150287"
-                    Point2="86.2270523890946,42.3019593150287"
-                    Point3="90.2270523890946,42.3019593150287" />
+                    Point1="-6.78570763188901,25.3941183173531"
+                    Point2="-10.785707631889,25.3941183173531"
+                    Point3="-10.785707631889,29.3941183173531" />
                   <mssgle:LineSegment
-                    End="136.757149632609,42.3019593150287" />
+                    End="-10.785707631889,43.2882366347062" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15005,7 +14955,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="438.142864331907,561.686276590398">
+          TopLeft="491.000008089202,561.686276590398">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -15029,6 +14979,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
                     Point3="-44.2383388571718,107.054908770976" />
                   <mssgle:LineSegment
                     End="-92.5285773282137,107.054908770976" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="144.514289643327,397.90588833733">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,43.9529385167429"
+              Start="0,0"
+              End="0,36.4529385167429">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.4529385167429" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -15161,7 +15133,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="120.825759252431,25.4941182261933,138.4627734375,10.7841796875"
+              BoundingBox="120.825759252432,25.4941182261933,138.4627734375,10.7841796875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -15196,7 +15168,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15290,7 +15264,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15324,7 +15300,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -15358,7 +15336,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
