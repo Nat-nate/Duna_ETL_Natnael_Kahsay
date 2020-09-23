@@ -38,7 +38,7 @@
         SSIS:Name="Sensitive">1</SSIS:Property>
       <SSIS:Property
         SSIS:Name="Value"
-        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAAC/LADdFN7WhVCIEL++YQ7IyvXcbQSA4M4ooMWMvLYieQAAAAAOgAAAAAIAACAAAAC/l47iU0c7tMVIOW3Ag5ykgasKz57ZoTs2nYXaavPNfpAAAACobmA7Tqt+VW+MnjnxiHZhAWsNTzXfHk6GVw8fn11H057l3FDdwztwWaE23UhNEOYx7DZlOmNmtWDW5MEEbThU73sDiBQUoCykiExZaiBz7vEVqgjTbFYMrdHm3ifRf5VTIZgJ/wVPleoHOuDpafKsSli7zxrimt1mRtAk/BkOJ/plqiyl/l5Q8LTcz9oxqQtAAAAAPm3AS4pRUc1nKbUfsxhL8groU50wdlLYxv+g/Wzem+8s8L9nlnJukny1PtkMBKqpb8RpmphAubqg5vhlyK8fAg==</SSIS:Property>
+        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAADHESGs0ebUZZ5/BgQPuuWfp0Gfd9f591x/4HKvj6rZEwAAAAAOgAAAAAIAACAAAADZO0qhHYJQ3LoR1jEAiHob9sOtmyiHGWTIm5UcoEHlpJAAAAD+Jg9KWb9TkuVdJmngDZmwSF/tkbCDAhS5+H8IPuxGhvg+C6HNCMYpw7YxLdYHizUIMBIxkODoHYze65vsO/t/z7JQddSFYZhupnlXHAYHHpPdeDawYvk3kApUPKVGAd/tRS89n2i3Z9HhDpja8j9xCZoQqFUIZ0QoMWBLSVH1FMTppX0sEFAuD8xfb/fVisBAAAAAjytA/xLYMFvkMIfSNvqtK49mvceXRhzlAUkrvUyzADhvQDCzn2E8xAtRkba2IjwGqbUoRW/bEXWDmAfI/JQU1g==</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
@@ -102,7 +102,7 @@
         SSIS:Name="Sensitive">1</SSIS:Property>
       <SSIS:Property
         SSIS:Name="Value"
-        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAABT3IMOe0/Yb8zZ4QE/B/7H8Wp8p2MUiqOpGFwEt7e0dgAAAAAOgAAAAAIAACAAAACho1Yadn7uaJ5DpEJUvNTelDPn8DiDHmMOtNKY7QgBuYAAAACqQeQNYs4eNkqazSHgiy3+eCBqGZH7G8DrS9EQoIiNpog8ElK7U9zR81vlybrvWgi0QBG6Wu6zb7NRQwLVwenh9gT8QqBonXF9BtLebtJbspyqYk7gU5P0xcQNMeN9rIgO1sD023JwbWqui29fznKn9/Ow1FvqKC1OjPamUYUDgEAAAAA1+zs03Ttivl2YziSZtnhR/u1VUKsqFl2BLMiggbavc2/TQZMdh2mvc2mnSH/0wX1oaJb2KBvcLHMw08k1GQ3Y</SSIS:Property>
+        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAABo1hjK20VobTz4HQG8Y8Cy0hhFHF4joOlmTxeweRz9owAAAAAOgAAAAAIAACAAAABfrVcFFv5hvPDGf7v5DKXtOnI0Wdyce8pXzhGtyX4xiYAAAACGkubgsjbfwvlRVmJ1glANHb78GO2sxGo+0A2c9/4He5E91x77FfHm15/Vo4rFMM/oRAVClI0H93Sek0erszvaYXxQMMyaEPV0UXrBVYgfcCEznXY9pcrDJq2qJNbD3j4psw5CqW0s1dymWy4IpnLDL8OmP1swfNZ0HHZGRSVVBUAAAADWIgdL5vLamB/WTFJ5mG+g6m732aLs/W0LvcChuflFH7BbMjauxclT8umD7dlo4OYaFyRtgYGZmTnzJ9+p3M5B</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
@@ -133,6 +133,27 @@
     <SSIS:Properties>
       <SSIS:Property
         SSIS:Name="ID">{662bff03-196c-4a40-8348-d2e72fc830e0}</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="CreationName"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Description"></SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Required">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Sensitive">0</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="Value">Data Source=DESKTOP-PEK1K8J;Initial Catalog=SimpleNexus;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
+      <SSIS:Property
+        SSIS:Name="DataType">18</SSIS:Property>
+    </SSIS:Properties>
+  </SSIS:Parameter>
+  <SSIS:Parameter
+    SSIS:Name="Para_DESKTOPPEK1K8JSimpleNexus_ConnectionString">
+    <SSIS:Properties>
+      <SSIS:Property
+        SSIS:Name="ID">{8cc42734-ad79-43c9-90ae-408bf5934d7a}</SSIS:Property>
       <SSIS:Property
         SSIS:Name="CreationName"></SSIS:Property>
       <SSIS:Property
