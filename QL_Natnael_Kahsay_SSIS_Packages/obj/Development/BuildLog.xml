@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Natnael_Kahsay_SSIS_Packages</Name>
-    <LastWriteTime>2020-09-22T23:22:13.2558622Z</LastWriteTime>
+    <LastWriteTime>2020-09-23T04:30:12.765333Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -27,8 +27,8 @@
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>Package1.dtsx</Name>
-      <LastWriteTime>2020-09-18T00:12:10.6918934Z</LastWriteTime>
+      <Name>Pkg_Natnael_Kahsay_SimpleNexus.dtsx</Name>
+      <LastWriteTime>2020-09-23T04:30:12.7165548Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

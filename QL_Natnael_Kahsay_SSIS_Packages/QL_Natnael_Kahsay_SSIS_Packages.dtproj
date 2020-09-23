@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-PEK1K8J</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAACBU+KFPby/t3H/7pj4QosxIVTSTKNUQP46/zE+mQzMHAAAAAAOgAAAAAIAACAAAAC1C+Un2QVNjdVDpvxGsf/O1sXLkXIKCfnSiDSyfvKR95AAAAB7/ZLQNj5Zm/u9OJUDcPvOKGafot/TmTdgNN5h4ryARejCo/pky/g+zPXlcp3DwM99nhS5/UR5tnSeVV1KNcE6/EXx1Occ0u9BsLYj1KLF4NbJ+adEc+w+rBFoAEgHKs5ttkohVivRDlwpPwLApAR3vsr7g7D3XdgE5/3xGm6n6cJBrUe6LlbUIrucF1JKcxVAAAAA+zRTgoQEn7FoykRzd3oKwREOEZVCvVXJWfDf9GFITqwB9B1dCnCHxwGDqPS974OAxUCiXHIMikfbfmKoJ3uBKA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAABdgP1rmGd7XYr+uJ5GoqLp6zNJcKOM2KqO4WMvGR4+vAAAAAAOgAAAAAIAACAAAADUBQ1ksKKuRhfZaCaTa93PL4N/qZuL4SaoyHffW0+FaJAAAABHlDmsLpde4Wsz/Uh24u3BPGGWRuwkQ2pF61deYEwnCzIjcbTsY7cQmZr65Y1NJoYea1KilqloEtcOzFV14X5A7livzDIRcNPjPIvJ58EnLRSwqeIJgJYSb1HC2e3w7i58unduwDPns56lFKNUa6tzWfh52IB/p6N6LYnispUYHjlkriFWZIlzuraC2z704x5AAAAAa2+Vkln8PS342yIUUyJiMoynKY++EoSHohHwynqFBFYHrkkqnMYgaGt8zA1G+j40UfmdtKzpKfCS1hUen1DZpA==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -34,7 +34,7 @@
           <SSIS:Package SSIS:Name="Pkg_Natnael_Kahsay_ QualityLoans.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Pkg_Natnael_Kahsay_UberWriter.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Pkg_Natnael_Kahsay_LendingPad.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Pkg_Natnael_Kahsay_LendingPad 1.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="Pkg_Natnael_Kahsay_SimpleNexus.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="LendingQB.conmgr" />
@@ -2274,8 +2274,6 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">
-                    </SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -2326,16 +2324,16 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Pkg_Natnael_Kahsay_LendingPad 1.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="Pkg_Natnael_Kahsay_SimpleNexus.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{64B051AF-2919-4326-B6B5-2198F11F2601}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Pkg_Natnael_Kahsay_LendingPad</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{7695E61E-C0DA-439B-A45B-5B81A128F3A8}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">Pkg_Natnael_Kahsay_SimpleNexus</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">227</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">239</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{0C65E4E4-FCFA-48E0-B9DC-CD78787FCB9B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{CCE2B9C4-3F2B-404A-888F-3806335F76DB}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

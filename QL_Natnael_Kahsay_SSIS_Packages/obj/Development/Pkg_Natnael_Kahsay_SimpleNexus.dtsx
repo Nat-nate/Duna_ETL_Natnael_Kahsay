@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-PEK1K8J"
   DTS:CreatorName="DESKTOP-PEK1K8J\natik"
-  DTS:DTSID="{9D0BE376-C6CC-4AAA-B9E4-7E17007ABF58}"
+  DTS:DTSID="{7695E61E-C0DA-439B-A45B-5B81A128F3A8}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="15.0.2000.123"
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_Natnael_Kahsay_SimpleNexus"
   DTS:PackageType="5"
-  DTS:VersionBuild="226"
-  DTS:VersionGUID="{0747B7BE-C9F4-4C93-8E00-A648CF2AE7C6}">
+  DTS:VersionBuild="237"
+  DTS:VersionGUID="{A78758D5-4652-48B0-80EF-6BE7F197B73F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[DESKTOP-PEK1K8J.STGQL]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{014D4A7B-4226-447C-A926-16786EF5DF08}"
+      DTS:DTSID="{2E868D9F-18F1-40C1-A117-86A7892F5BCC}"
       DTS:ObjectName="DESKTOP-PEK1K8J.STGQL">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -29,7 +29,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[FFCM_CrossWalk]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{0C4AD239-56C4-4681-B3CC-A0D24BA703CE}"
+      DTS:DTSID="{0908E4F9-18A9-4F39-BF78-013F7EC98BD9}"
       DTS:ObjectName="FFCM_CrossWalk">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -49,7 +49,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="MortgageInsuranceCompany"
-              DTS:DTSID="{33B37FE7-2FBE-4A56-988D-B7EBC7C82097}"
+              DTS:DTSID="{D3A7A018-4A86-404F-8D45-EF969C7EDF71}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -58,7 +58,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Insurance_Company"
-              DTS:DTSID="{B7159B96-FECD-4F74-801B-D3E83974AA22}"
+              DTS:DTSID="{E0584160-3555-4812-BFB6-EDAF6F5E5796}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -67,7 +67,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LendingPad.json]"
       DTS:CreationName="FILE"
-      DTS:DTSID="{5B15B42A-001B-4BED-B7C1-502B73D45441}"
+      DTS:DTSID="{D3ACC68D-9C29-436F-865F-694F1FA6C455}"
       DTS:ObjectName="LendingPad.json">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -79,7 +79,7 @@
     <DTS:PackageParameter
       DTS:CreationName=""
       DTS:DataType="3"
-      DTS:DTSID="{B693A869-B8C1-4D8B-AE6E-A62BA5CB4B49}"
+      DTS:DTSID="{43DE5DB8-E6EB-448C-9E1E-F978E1AB5FB3}"
       DTS:ObjectName="Parameter">
       <DTS:Property
         DTS:DataType="3"
@@ -89,7 +89,7 @@
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{C69AFC09-86E9-4D77-8842-F1684120DCB8}"
+      DTS:DTSID="{44A39769-5BCD-4FFB-A09B-CE93BC910007}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="Var7zip">
@@ -98,7 +98,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{BEEA638E-CB96-4C18-8FB1-0EA9182C3681}"
+      DTS:DTSID="{74AD6950-1C7B-404E-ACE0-B66D949AC101}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarArchivePath">
@@ -107,7 +107,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{3CD67082-C161-4E30-9D05-792D8AE12D77}"
+      DTS:DTSID="{0B05EFE1-446E-45A4-BC8C-F17E5E6A9CDC}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarBody">
@@ -117,7 +117,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{87C42C28-E846-48DC-A8BF-9A3E961BC7DD}"
+      DTS:DTSID="{95AF4D24-7B13-4767-B8A7-39295AA4B2CB}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarFileName">
@@ -126,7 +126,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{CF332C37-4A59-4486-9950-F887BA066347}"
+      DTS:DTSID="{14E3658B-9C4A-4863-A692-E041F232F91A}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarFromEmail">
@@ -135,7 +135,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{2A203566-30EE-4F86-8947-AB47AD71B489}"
+      DTS:DTSID="{F1BDD307-5E32-45BC-9259-7B8D34879D37}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarFTPNewFile">
@@ -144,7 +144,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A1276375-F4BA-4CB9-850A-1EC379045873}"
+      DTS:DTSID="{08DCD8B4-6E37-4EC2-9036-0DC68DB5AABC}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="VarIsFileExistsFlag">
@@ -153,7 +153,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{88A6BD83-2F04-447A-8056-C61D456A650E}"
+      DTS:DTSID="{B927807C-C8B7-452B-86F2-0D28FF2C27D2}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarLastModifiedDate">
@@ -162,7 +162,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{659E6C6E-A0F8-4853-B774-611C83D3CC54}"
+      DTS:DTSID="{F580A99F-CA1B-4392-82DD-D6C8B70A3A2A}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarLocalPath">
@@ -171,7 +171,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A2DBAE9F-C704-48B7-B742-BE7382EBD054}"
+      DTS:DTSID="{2EF33474-CD5C-4CAD-B8DF-983F53F11185}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarPassword">
@@ -180,7 +180,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{095EDA5D-8D91-4ED1-A01C-5EB468AA3088}"
+      DTS:DTSID="{5859C0C8-7831-4A45-A96B-23795A4D44B8}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarRemoteFilePath">
@@ -189,18 +189,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{799933DF-CFEF-4F3C-BEEF-5E974EF364D0}"
+      DTS:DTSID="{AEAF99A4-D364-48FB-A28C-8CC24223725C}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::VarArchivePath]+&quot;\\&quot; +REPLACE( @[User::VarFileName],&quot;.zip&quot;,&quot;_&quot;)+REPLACE(SUBSTRING(REPLACE((DT_WSTR,50)GETDATE(),&quot; &quot;,&quot;-&quot;),1,19),&quot;:&quot;,&quot;-&quot;)+&quot;.zip&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarRenameArchiveFile">
       <DTS:VariableValue
-        DTS:DataType="8">C:\BulkFiles\SimpleNexus\ArchiveFile\SimpleNexus_2020-09-22-18-53-18.zip</DTS:VariableValue>
+        DTS:DataType="8">C:\BulkFiles\SimpleNexus\ArchiveFile\SimpleNexus_2020-09-23-00-30-15.zip</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{90A165B4-7576-4125-94F5-ECFA66DBDF26}"
+      DTS:DTSID="{F2AC8E67-443D-4F9F-8A88-DBF049111BEE}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="VarRowCount">
@@ -209,18 +209,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{2AB566CC-51EE-48E0-A0C2-9FB45667BF4A}"
+      DTS:DTSID="{6F352A45-7D9C-43BD-9C8D-5BDA377D8FD0}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarRunTime">
       <DTS:VariableValue
-        DTS:DataType="7">9/22/2020 6:53:18 PM</DTS:VariableValue>
+        DTS:DataType="7">9/23/2020 12:30:15 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{DE426247-9972-4D0B-8F2B-1A7B86493025}"
+      DTS:DTSID="{E0807A08-FA9F-4A85-80AD-BB118652BAFD}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarSmtpClient">
@@ -229,7 +229,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{1F7E408B-076E-4D3F-A71D-49002B2458AA}"
+      DTS:DTSID="{48119E78-F219-4FE6-AA90-FEC309C93DBB}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarSmtpServerPort">
@@ -238,7 +238,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{D8FBB060-4773-423A-8C4D-214F4BADA25F}"
+      DTS:DTSID="{B9FDD1B0-92A0-4CC5-8040-7E7DDA0CDA9C}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarSourceName">
@@ -247,7 +247,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{A2C6CD63-3B8C-4355-939A-F48A32BB318A}"
+      DTS:DTSID="{388151B2-B5EC-44FC-9E38-620E10868027}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarSubject">
@@ -256,7 +256,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{EA76E805-327C-4B81-8142-74743A928415}"
+      DTS:DTSID="{52E9AD4B-1218-470B-BF92-295BB0E65C99}"
       DTS:IncludeInDebugDump="6789"
       DTS:Namespace="User"
       DTS:ObjectName="VarTime">
@@ -265,18 +265,18 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{B9DDC9E0-B134-41D3-B379-2EE185DC601E}"
+      DTS:DTSID="{F094F89A-42C3-4E6E-B0E9-533D18E5242B}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="GETDATE()"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarTimeStamp">
       <DTS:VariableValue
-        DTS:DataType="7">9/22/2020 6:53:18 PM</DTS:VariableValue>
+        DTS:DataType="7">9/23/2020 12:30:15 AM</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{6FA72590-0B66-42ED-BADC-C0A8DEB9D0B2}"
+      DTS:DTSID="{8B48D301-ACE8-4AFD-8449-DD5D3F678CDA}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarToEmail">
@@ -285,9 +285,9 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{6F6CBEE8-07A7-4D7E-8A5C-22609D38C951}"
+      DTS:DTSID="{B5E1E284-498C-42FD-8EE4-E5B0B815B6C3}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="@[User::VarUnzipFolder] + &quot;\\&quot; + @[User::VarFTPNewFile]"
+      DTS:Expression="@[User::VarUnzipFolder]+ &quot;\\&quot; + @[User::VarFTPNewFile]"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarUnzipFilePath">
@@ -296,7 +296,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{3AB65CBC-97B0-4AE9-B954-7A47A5E12C9D}"
+      DTS:DTSID="{F55BEDFF-AEB3-4FC9-8B03-05B5B1446D54}"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="VarUnzipFolder">
@@ -305,7 +305,7 @@
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
-      DTS:DTSID="{66046236-2F53-4C7F-85A7-574C02A85939}"
+      DTS:DTSID="{0282AE6E-B040-4D6D-BDF7-C83EDA5F7DB4}"
       DTS:EvaluateAsExpression="True"
       DTS:Expression="@[User::VarLocalPath]+  @[User::VarFileName]"
       DTS:IncludeInDebugDump="2345"
@@ -317,53 +317,16 @@
   </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Execute Process Task_UnzipFiles"
-      DTS:CreationName="Microsoft.ExecuteProcess"
-      DTS:Description="Execute Process Task"
-      DTS:DTSID="{8277B612-918E-4C40-A4AA-E14DCC9C4AED}"
-      DTS:ExecutableType="Microsoft.ExecuteProcess"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Execute Process Task_UnzipFiles"
-      DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
-      <DTS:Variables />
-      <DTS:PropertyExpression
-        DTS:Name="Arguments">"X "   +   @[User::VarZipFilePath]  +   " -o" +    @[User::VarUnzipFolder]</DTS:PropertyExpression>
-      <DTS:PropertyExpression
-        DTS:Name="Executable">@[User::Var7zip]</DTS:PropertyExpression>
-      <DTS:ObjectData>
-        <ExecuteProcessData
-          Executable="C:\Program Files\7-Zip\7z.exe"
-          Arguments="X C:\BulkFiles\SimpleNexus\Zipped\SimpleNexus.zip -oC:\BulkFiles\SimpleNexus\UnzippedFile" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Execute SQL Task"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{3400D82D-139C-4738-954B-73D3B481A251}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Execute SQL Task"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{014D4A7B-4226-447C-A926-16786EF5DF08}" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
       DTS:refId="Package\Execute SQL Task_LOGTable"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
       DTS:Disabled="True"
-      DTS:DTSID="{5B39844A-C7F4-4924-914B-CA75F2B4E44C}"
+      DTS:DTSID="{BC1996B0-2320-4494-870F-58D98F438DE6}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Execute SQL Task_LOGTable"
       DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="2">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
@@ -415,31 +378,101 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\FST Rename and Move Files"
-      DTS:CreationName="Microsoft.FileSystemTask"
-      DTS:Description="C:\BulkFiles\ArchivedFiles\LendingPad_2020_9_21.zip"
-      DTS:DTSID="{FDC86057-9382-4772-923E-B5321FF5B1B2}"
-      DTS:ExecutableType="Microsoft.FileSystemTask"
+      DTS:refId="Package\Foreach Loop Container"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{E28EBE0D-7395-423B-83A0-DED4036FD1AD}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
       DTS:LocaleID="-1"
-      DTS:ObjectName="FST Rename and Move Files"
-      DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="1">
+      DTS:ObjectName="Foreach Loop Container">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{E00D6B92-113F-465F-BC9A-560CE0CAD458}"
+        DTS:ObjectName="{E00D6B92-113F-465F-BC9A-560CE0CAD458}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::VarLocalPath]</DTS:PropertyExpression>
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="C:\BulkFiles\SimpleNexus\Zipped\" />
+            <FEFEProperty
+              FileSpec="*.zip" />
+            <FEFEProperty
+              FileNameRetrievalType="1" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
       <DTS:Variables />
-      <DTS:ObjectData>
-        <FileSystemData
-          TaskOperationType="MoveFile"
-          TaskOverwriteDestFile="True"
-          TaskSourcePath="User::VarZipFilePath"
-          TaskIsSourceVariable="True"
-          TaskDestinationPath="User::VarRenameArchiveFile"
-          TaskIsDestinationVariable="True" />
-      </DTS:ObjectData>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\Execute Process Task_UnzipFiles"
+          DTS:CreationName="Microsoft.ExecuteProcess"
+          DTS:Description="Execute Process Task"
+          DTS:DTSID="{3BB35FB0-4358-4160-BC5A-597970BF5C70}"
+          DTS:ExecutableType="Microsoft.ExecuteProcess"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute Process Task_UnzipFiles"
+          DTS:TaskContact="Execute Process Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="3">
+          <DTS:Variables />
+          <DTS:PropertyExpression
+            DTS:Name="Arguments">"X "  +   @[User::VarZipFilePath]  +   " -o" + @[User::VarUnzipFolder]</DTS:PropertyExpression>
+          <DTS:PropertyExpression
+            DTS:Name="Executable">@[User::Var7zip]</DTS:PropertyExpression>
+          <DTS:ObjectData>
+            <ExecuteProcessData
+              Executable="C:\Program Files\7-Zip\7z.exe"
+              Arguments="X C:\BulkFiles\SimpleNexus\Zipped\SimpleNexus.zip -oC:\BulkFiles\SimpleNexus\UnzippedFile" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\FST Rename and Move Files"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="C:\BulkFiles\ArchivedFiles\LendingPad_2020_9_21.zip"
+          DTS:DTSID="{661064CD-7C03-4009-AB3A-F895B9FBD835}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="FST Rename and Move Files"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="3">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="MoveFile"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="User::VarZipFilePath"
+              TaskIsSourceVariable="True"
+              TaskDestinationPath="User::VarRenameArchiveFile"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{3530D058-0547-42B0-95A7-59A3BFBB5208}"
+          DTS:From="Package\Foreach Loop Container\Execute Process Task_UnzipFiles"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Foreach Loop Container\FST Rename and Move Files" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{F55AE8F5-0A3F-4497-BAFE-4D1BCE4C1A03}"
+          DTS:ObjectName="{F55AE8F5-0A3F-4497-BAFE-4D1BCE4C1A03}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::VarFileName" />
+      </DTS:ForEachVariableMappings>
     </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\FTP Task"
       DTS:CreationName="Microsoft.FtpTask"
       DTS:Description="FTP Task"
-      DTS:DTSID="{37E5ED0F-E4C0-44BD-920D-88769EA0C2D0}"
+      DTS:DTSID="{E1EDD26A-E4C7-4EAA-BEBF-21FAA356882E}"
       DTS:ExecutableType="Microsoft.FtpTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="FTP Task"
@@ -461,7 +494,7 @@
       DTS:refId="Package\Script Task_CheckFileExistence"
       DTS:CreationName="Microsoft.ScriptTask"
       DTS:Description="Script Task"
-      DTS:DTSID="{094CA94B-3442-414B-9C77-E36078761B30}"
+      DTS:DTSID="{9AD0DAFC-BD2F-4454-9B0E-E9E8DC2A4BDF}"
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Script Task_CheckFileExistence"
@@ -476,14 +509,35 @@
           ReadOnlyVariables="User::VarFileName,User::VarLocalPath"
           ReadWriteVariables="User::VarIsFileExistsFlag">
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_f4e0dfb83ca14a578f8791faf98cbaab")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_f4e0dfb83ca14a578f8791faf98cbaab")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -869,35 +923,14 @@ namespace ST_f4e0dfb83ca14a578f8791faf98cbaab.Properties {
     }
 }]]></ProjectItem>
           <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_f4e0dfb83ca14a578f8791faf98cbaab")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_f4e0dfb83ca14a578f8791faf98cbaab")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -1091,7 +1124,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
       DTS:refId="Package\Script Task_SendEmail"
       DTS:CreationName="Microsoft.ScriptTask"
       DTS:Description="Script Task"
-      DTS:DTSID="{63A4D02B-A644-4155-95F2-B9FDF9E6FB54}"
+      DTS:DTSID="{B3123924-7E82-4481-9D7B-C81612CDD6CC}"
       DTS:ExecutableType="Microsoft.ScriptTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Script Task_SendEmail"
@@ -1105,14 +1138,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           Language="CSharp"
           ReadOnlyVariables="System::PackageName,System::StartTime,User::VarFileName,User::VarFromEmail,User::VarLocalPath,User::VarPassword,User::VarSmtpClient,User::VarSmtpServerPort,User::VarSubject,User::VarToEmail">
           <ProjectItem
-            Name="Properties\Settings.settings"
-            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+            Name="Properties\AssemblyInfo.cs"
+            Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
           <ProjectItem
             Name="Properties\Resources.resx"
             Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -1232,6 +1286,92 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+          <ProjectItem
+            Name="ST_ec665fbd7ea44122a3356a7519f89c44.csproj"
+            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{332EB8CB-3191-44ED-91B5-FACF3A9490C1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ST_1e9cb8777c2b41879b9e2e1e738e622c</RootNamespace>
+    <AssemblyName>ST_ec665fbd7ea44122a3356a7519f89c44</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ScriptMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a C# project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
+        <Host Name="ScriptTask" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_ST150</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem>
           <ProjectItem
             Name="ScriptMain.cs"
             Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -1389,6 +1529,64 @@ namespace ST_1e9cb8777c2b41879b9e2e1e738e622c
 	}
 }]]></ProjectItem>
           <ProjectItem
+            Name="Project"
+            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>ST_ec665fbd7ea44122a3356a7519f89c44</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>ST_ec665fbd7ea44122a3356a7519f89c44</msb:DisplayName>
+    <msb:ProjectId>{FBB6AB1D-5B4D-4238-866F-C72517DD9B48}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="ST_ec665fbd7ea44122a3356a7519f89c44.csproj" />
+    <msb:File Include="ScriptMain.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.Designer.cs"
+            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Settings.get_Default():ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Sett" +
+    "ings")]
+
+namespace ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
+          <ProjectItem
+            Name="Properties\Settings.settings"
+            Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+          <ProjectItem
             Name="Properties\Resources.Designer.cs"
             Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
 // <auto-generated>
@@ -1456,171 +1654,6 @@ namespace ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties {
         }
     }
 }]]></ProjectItem>
-          <ProjectItem
-            Name="Project"
-            Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:CodeName>ST_ec665fbd7ea44122a3356a7519f89c44</msb:CodeName>
-    <msb:Language>msBuild</msb:Language>
-    <msb:DisplayName>ST_ec665fbd7ea44122a3356a7519f89c44</msb:DisplayName>
-    <msb:ProjectId>{FBB6AB1D-5B4D-4238-866F-C72517DD9B48}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="ST_ec665fbd7ea44122a3356a7519f89c44.csproj" />
-    <msb:File Include="ScriptMain.cs" />
-    <msb:File Include="Properties\Settings.settings" />
-    <msb:File Include="Properties\AssemblyInfo.cs" />
-    <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="Properties\Resources.Designer.cs" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
-  </msb:ItemGroup>
-</c:Project>]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\Settings.Designer.cs"
-            Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
-//
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
-
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Settings.get_Default():ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Sett" +
-    "ings")]
-
-namespace ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-          <ProjectItem
-            Name="Properties\AssemblyInfo.cs"
-            Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
-          <ProjectItem
-            Name="ST_ec665fbd7ea44122a3356a7519f89c44.csproj"
-            Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{332EB8CB-3191-44ED-91B5-FACF3A9490C1}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ST_1e9cb8777c2b41879b9e2e1e738e622c</RootNamespace>
-    <AssemblyName>ST_ec665fbd7ea44122a3356a7519f89c44</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>.\bin\Debug\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <DebugSymbols>false</DebugSymbols>
-    <Optimize>true</Optimize>
-    <OutputPath>.\bin\Release\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-  </ItemGroup>
-  <ItemGroup>
-    <AppDesigner Include="Properties\" />
-    <Compile Include="Properties\AssemblyInfo.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
-    <Compile Include="ScriptMain.cs">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-  <!-- Include the build rules for a C# project.-->
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ProjectExtensions>
-    <VisualStudio>
-      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
-        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
-        <Host Name="ScriptTask" />
-        <ProjectClient>
-          <HostIdentifier>SSIS_ST150</HostIdentifier>
-        </ProjectClient>
-      </FlavorProperties>
-    </VisualStudio>
-  </ProjectExtensions>
-</Project>]]></ProjectItem>
           <BinaryItem
             Name="ST_ec665fbd7ea44122a3356a7519f89c44.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
@@ -1764,8 +1797,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       DTS:refId="Package\Sequence Container_LendingPad"
       DTS:CreationName="STOCK:SEQUENCE"
       DTS:Description="Sequence Container"
-      DTS:Disabled="True"
-      DTS:DTSID="{831D585B-79A2-44CE-A0F7-B8870E4016CA}"
+      DTS:DTSID="{0CD87248-0154-4650-A9F3-4E0F44BF6575}"
       DTS:ExecutableType="STOCK:SEQUENCE"
       DTS:LocaleID="-1"
       DTS:ObjectName="Sequence Container_LendingPad">
@@ -1775,7 +1807,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:refId="Package\Sequence Container_LendingPad\Data Flow Task_LendingPad_From_JSON_To_StagingTable"
           DTS:CreationName="Microsoft.Pipeline"
           DTS:Description="Data Flow Task"
-          DTS:DTSID="{CECC84B9-5062-4F5E-86AA-EFE52F81C9CE}"
+          DTS:Disabled="True"
+          DTS:DTSID="{801FE766-414F-4280-92FC-043C839A5BBB}"
           DTS:ExecutableType="Microsoft.Pipeline"
           DTS:LocaleID="-1"
           DTS:ObjectName="Data Flow Task_LendingPad_From_JSON_To_StagingTable"
@@ -13723,19 +13756,37 @@ where [refTable].[MarketSourceCode] = ?</property>
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Sequence Container_LendingPad\Execute SQL Task_Delete_StagingTable"
+          DTS:refId="Package\Sequence Container_LendingPad\Execute SQL Task"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{82D26409-A700-430F-80F2-C864600810F0}"
+          DTS:DTSID="{7E1C6691-4AFD-4CA7-AE22-8775FC7890D5}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Execute SQL Task_Delete_StagingTable"
+          DTS:ObjectName="Execute SQL Task"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
           DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{014D4A7B-4226-447C-A926-16786EF5DF08}"
+              SQLTask:Connection="{DEFE5F70-36C3-4B0F-8B2B-96B688379BBF}"
+              SQLTask:SqlStatementSource="USE [master]&#xA;&#xA;RESTORE DATABASE [SimpleNexus] FROM  DISK = N'C:\BulkFiles\SimpleNexus\UnzippedFile\SimpleNexus.bak' WITH  FILE = 1,  MOVE N'SimpleNexus' TO N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\SimpleNexus.mdf',  MOVE N'SimpleNexus_log' TO N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\SimpleNexus_log.ldf',  NORECOVERY,  NOUNLOAD,  REPLACE,  STATS = 5&#xA;&#xA;GO" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container_LendingPad\Execute SQL Task_Delete_StagingTable"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:Disabled="True"
+          DTS:DTSID="{8757969D-984D-4B71-995E-55CCA171D0A5}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task_Delete_StagingTable"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{2E868D9F-18F1-40C1-A117-86A7892F5BCC}"
               SQLTask:SqlStatementSource="DELETE From [dbo].[Stg_Natnael_Kahsay_QL]&#xA;WHERE SourceName='LendingPad'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
@@ -13743,16 +13794,17 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package\Sequence Container_LendingPad\Execute SQL Task_IncrementalLoad"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{2AC2E547-143F-4395-8FD4-44B3D0D30815}"
+          DTS:Disabled="True"
+          DTS:DTSID="{CF0475A5-9B8A-4C3B-8066-B6FCBCFBBDD4}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task_IncrementalLoad"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
-              SQLTask:Connection="{014D4A7B-4226-447C-A926-16786EF5DF08}"
+              SQLTask:Connection="{2E868D9F-18F1-40C1-A117-86A7892F5BCC}"
               SQLTask:SqlStatementSource=" SELECT SourceName&#xA;,MAX(LastModifiedDate) AS MaxLastModifiedDate&#xA;        FROM [dbo].[Stg_Natnael_Kahsay_QL]    &#xA;&#x9;Where [SourceName]= ?   &#xA;        Group by  SourceName"
               SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
               <SQLTask:ResultBinding
@@ -13774,12 +13826,13 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package\Sequence Container_LendingPad\File System Task_Delete_UnzippedFile"
           DTS:CreationName="Microsoft.FileSystemTask"
           DTS:Description="File System Task"
-          DTS:DTSID="{DB09D3DD-6DD2-4AAA-9734-C01405B4DD59}"
+          DTS:Disabled="True"
+          DTS:DTSID="{0BA57B42-1AD3-4CA2-BD13-C0A69F43A630}"
           DTS:ExecutableType="Microsoft.FileSystemTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="File System Task_Delete_UnzippedFile"
           DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <FileSystemData
@@ -13793,7 +13846,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container_LendingPad.PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{BC8FB0B4-0DAD-4D8E-9151-DBAF89ABE271}"
+          DTS:DTSID="{B5E3D6F7-20D9-4DFD-AB6C-A79EDBA149BA}"
           DTS:From="Package\Sequence Container_LendingPad\Execute SQL Task_Delete_StagingTable"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -13801,7 +13854,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container_LendingPad.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
-          DTS:DTSID="{E2DCAD19-C6A7-42A6-B7A6-4701CB925582}"
+          DTS:DTSID="{25C78A7F-FD4B-47F1-A7D4-D3BA0327F6D4}"
           DTS:From="Package\Sequence Container_LendingPad\Data Flow Task_LendingPad_From_JSON_To_StagingTable"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
@@ -13809,7 +13862,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Sequence Container_LendingPad.PrecedenceConstraints[Constraint 2]"
           DTS:CreationName=""
-          DTS:DTSID="{3658AE4B-9532-44AD-BDE8-5C3842897FA7}"
+          DTS:DTSID="{74EA1F14-B7B4-43C7-B598-BD7572DE9C1C}"
           DTS:From="Package\Sequence Container_LendingPad\Execute SQL Task_IncrementalLoad"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 2"
@@ -13821,7 +13874,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{F0010C9C-E5F9-4544-87CC-A0D0848A8F36}"
+      DTS:DTSID="{F96B8B58-4627-4C6A-9E2E-5F97D61FBAE8}"
       DTS:From="Package\FTP Task"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
@@ -13829,7 +13882,7 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{3C34DC42-C3BB-4A0D-A898-73945A7FD87F}"
+      DTS:DTSID="{6EE436FF-20F0-48D1-9964-7A679C4B8C0D}"
       DTS:EvalOp="3"
       DTS:Expression="@[User::VarIsFileExistsFlag]==0"
       DTS:From="Package\Script Task_CheckFileExistence"
@@ -13839,41 +13892,27 @@ where [refTable].[MarketSourceCode] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{30E70343-FE89-4050-A750-EE45A34AC834}"
+      DTS:DTSID="{9998ED68-4465-42F3-8ABE-027AB9CD4BB8}"
+      DTS:EvalOp="3"
+      DTS:Expression="@[User::VarIsFileExistsFlag]==1"
       DTS:From="Package\Script Task_CheckFileExistence"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
-      DTS:To="Package\Execute Process Task_UnzipFiles" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
-      DTS:CreationName=""
-      DTS:DTSID="{EB48B1BF-E5E2-4623-8FE5-0D61A77FE5F0}"
-      DTS:From="Package\Execute Process Task_UnzipFiles"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 3"
-      DTS:To="Package\FST Rename and Move Files" />
+      DTS:To="Package\Foreach Loop Container" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
       DTS:CreationName=""
-      DTS:DTSID="{E3422C14-4AC4-42F0-86A4-26D372A41FE0}"
+      DTS:DTSID="{29DA8388-02CA-4297-A9AB-B9FDA239FF2D}"
       DTS:From="Package\Sequence Container_LendingPad"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
       DTS:To="Package\Execute SQL Task_LOGTable" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
-      DTS:CreationName=""
-      DTS:DTSID="{5BA2C450-B2CB-4BB3-B658-99CC28C8973B}"
-      DTS:From="Package\FST Rename and Move Files"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 5"
-      DTS:To="Package\Execute SQL Task" />
   </DTS:PrecedenceConstraints>
   <DTS:EventHandlers>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnError]"
       DTS:CreationName="OnError"
-      DTS:DTSID="{74926FA8-7586-4525-833B-F933BE22631A}"
+      DTS:DTSID="{1F8E184A-4D64-410C-B4AB-E3154037910B}"
       DTS:EventID="0"
       DTS:EventName="OnError"
       DTS:LocaleID="-1">
@@ -13881,7 +13920,7 @@ where [refTable].[MarketSourceCode] = ?</property>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{51C0C4BB-73E2-42C8-AA3C-725CE722C4CA}"
+          DTS:DTSID="{6F9E70A8-C3B8-485F-A808-B9496441DACF}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -13894,7 +13933,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Execute SQL Task_ErrorLOG"
           DTS:CreationName="Microsoft.ExecuteSQLTask"
           DTS:Description="Execute SQL Task"
-          DTS:DTSID="{EDBB153E-B013-4435-B239-BCF3E6104CBB}"
+          DTS:DTSID="{D0F13465-FBFE-4822-B46B-D3F57AD0FF20}"
           DTS:ExecutableType="Microsoft.ExecuteSQLTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task_ErrorLOG"
@@ -13953,7 +13992,7 @@ where [refTable].[MarketSourceCode] = ?</property>
           DTS:refId="Package.EventHandlers[OnError]\Script Task_SendEmail"
           DTS:CreationName="Microsoft.ScriptTask"
           DTS:Description="Script Task"
-          DTS:DTSID="{66F6D124-342A-42DB-9AC5-68BECD00BA23}"
+          DTS:DTSID="{51B909A7-560C-45D3-9243-436CD37222D4}"
           DTS:ExecutableType="Microsoft.ScriptTask"
           DTS:LocaleID="-1"
           DTS:ObjectName="Script Task_SendEmail">
@@ -13967,35 +14006,14 @@ where [refTable].[MarketSourceCode] = ?</property>
               ReadOnlyVariables="System::PackageName,User::VarFromEmail,User::VarPassword,User::VarSmtpClient,User::VarSmtpServerPort,User::VarSubject,User::VarToEmail"
               ReadWriteVariables="System::ErrorCode,System::ErrorDescription,User::VarTimeStamp">
               <ProjectItem
-                Name="Properties\AssemblyInfo.cs"
-                Encoding="UTF8"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
-[assembly: AssemblyCopyright("Copyright @  2020")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
+                Name="Properties\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -14115,6 +14133,35 @@ using System.Runtime.CompilerServices;
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 </root>]]></ProjectItem>
+              <ProjectItem
+                Name="Properties\Settings.Designer.cs"
+                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Settings.get_Default():ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Sett" +
+    "ings")]
+
+namespace ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}]]></ProjectItem>
               <ProjectItem
                 Name="ScriptMain.cs"
                 Encoding="UTF8"><![CDATA[#region Help:  Introduction to the script task
@@ -14266,6 +14313,26 @@ namespace ST_1e9cb8777c2b41879b9e2e1e738e622c
 	}
 }]]></ProjectItem>
               <ProjectItem
+                Name="Project"
+                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>ST_21b927bac7a34a79848a904cf8b2351e</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>ST_21b927bac7a34a79848a904cf8b2351e</msb:DisplayName>
+    <msb:ProjectId>{C98F32BF-775B-49B6-BDD2-18922078110E}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="ST_21b927bac7a34a79848a904cf8b2351e.csproj" />
+    <msb:File Include="ScriptMain.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+  </msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+              <ProjectItem
                 Name="ST_21b927bac7a34a79848a904cf8b2351e.csproj"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -14352,63 +14419,35 @@ namespace ST_1e9cb8777c2b41879b9e2e1e738e622c
   </ProjectExtensions>
 </Project>]]></ProjectItem>
               <ProjectItem
-                Name="Project"
-                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:CodeName>ST_21b927bac7a34a79848a904cf8b2351e</msb:CodeName>
-    <msb:Language>msBuild</msb:Language>
-    <msb:DisplayName>ST_21b927bac7a34a79848a904cf8b2351e</msb:DisplayName>
-    <msb:ProjectId>{C98F32BF-775B-49B6-BDD2-18922078110E}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="ST_21b927bac7a34a79848a904cf8b2351e.csproj" />
-    <msb:File Include="ScriptMain.cs" />
-    <msb:File Include="Properties\Settings.settings" />
-    <msb:File Include="Properties\AssemblyInfo.cs" />
-    <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="Properties\Resources.Designer.cs" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
-  </msb:ItemGroup>
-</c:Project>]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.Designer.cs"
-                Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
-// <auto-generated>
-//     This code was generated by a tool.
+                Name="Properties\AssemblyInfo.cs"
+                Encoding="UTF8"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
 //
-//     Changes to this file may cause incorrect behavior and will be lost if
-//     the code is regenerated.
-// </auto-generated>
-//------------------------------------------------------------------------------
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("ST_1e9cb8777c2b41879b9e2e1e738e622c")]
+[assembly: AssemblyCopyright("Copyright @  2020")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Settings.get_Default():ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties.Sett" +
-    "ings")]
-
-namespace ST_1e9cb8777c2b41879b9e2e1e738e622c.Properties {
-    
-    
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
-        
-        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-        private static Settings defaultInstance = new Settings();
-        
-        public static Settings Default {
-            get {
-                return defaultInstance;
-            }
-        }
-    }
-}]]></ProjectItem>
-              <ProjectItem
-                Name="Properties\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
+[assembly: AssemblyVersion("1.0.*")]]]></ProjectItem>
               <ProjectItem
                 Name="Properties\Resources.Designer.cs"
                 Encoding="UTF8"><![CDATA[//------------------------------------------------------------------------------
@@ -14621,7 +14660,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:PrecedenceConstraint
           DTS:refId="Package.EventHandlers[OnError].PrecedenceConstraints[Constraint]"
           DTS:CreationName=""
-          DTS:DTSID="{E32B5A6B-AC4A-4007-B37A-A151BB6112DF}"
+          DTS:DTSID="{1256D9E2-E52A-4562-889C-6B2B5221E47C}"
           DTS:From="Package.EventHandlers[OnError]\Execute SQL Task_ErrorLOG"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
@@ -14631,7 +14670,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     <DTS:EventHandler
       DTS:refId="Package.EventHandlers[OnPostExecute]"
       DTS:CreationName="OnPostExecute"
-      DTS:DTSID="{4F5F6F3B-8DA7-4352-9659-D8A0FCC321B8}"
+      DTS:DTSID="{358BF76E-65FC-4D96-A0C0-51068CF79F6B}"
       DTS:EventID="0"
       DTS:EventName="OnPostExecute"
       DTS:LocaleID="-1">
@@ -14639,7 +14678,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         <DTS:Variable
           DTS:CreationName=""
           DTS:Description="The propagate property of the event"
-          DTS:DTSID="{D0189414-0BAA-4564-AE92-306533A879B1}"
+          DTS:DTSID="{BFD66081-AE33-494E-851A-234288B6EA19}"
           DTS:IncludeInDebugDump="6789"
           DTS:Namespace="System"
           DTS:ObjectName="Propagate">
@@ -14663,75 +14702,63 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="232,41.6"
-          Id="Package\Execute Process Task_UnzipFiles"
-          TopLeft="36.6428572644992,263.917651702624" />
-        <NodeLayout
-          Size="162.4,41.6"
-          Id="Package\Execute SQL Task"
-          TopLeft="65.9714296540435,441.858826854073" />
-        <NodeLayout
           Size="262.4,56.8"
           Id="Package\Execute SQL Task_LOGTable"
-          TopLeft="128.571430760988,640.341185361374" />
-        <NodeLayout
-          Size="211.2,41.6"
-          Id="Package\FST Rename and Move Files"
-          TopLeft="36.2571496326102,356.30588833733" />
+          TopLeft="75.7142870036934,640.341185361374" />
         <NodeLayout
           Size="121.6,41.6"
           Id="Package\FTP Task"
-          TopLeft="82.1428585417417,16.8235296477086" />
+          TopLeft="29.2857147844471,16.8235296477086" />
         <NodeLayout
           Size="224.8,41.6"
           Id="Package\Script Task_CheckFileExistence"
-          TopLeft="56.4285723895446,146.823531470909" />
+          TopLeft="3.57142863224999,146.823531470909" />
         <NodeLayout
           Size="184.8,41.6"
           Id="Package\Script Task_SendEmail"
-          TopLeft="331.428577072767,67.2941185908327" />
+          TopLeft="278.571433315472,67.2941185908327" />
         <NodeLayout
-          Size="356.8,41.6"
+          Size="356.8,44.8"
           Id="Package\Sequence Container_LendingPad\Data Flow Task_LendingPad_From_JSON_To_StagingTable"
-          TopLeft="16.2142858967493,163.082359783541" />
+          TopLeft="16.2142858967493,202.082360330501" />
         <NodeLayout
           Size="265.6,41.6"
           Id="Package\Sequence Container_LendingPad\Execute SQL Task_Delete_StagingTable"
-          TopLeft="47.3142939859507,75.1411820796126" />
+          TopLeft="38.7428652685518,133.258829953514" />
         <NodeLayout
           Size="247.2,41.6"
           Id="Package\Sequence Container_LendingPad\Execute SQL Task_IncrementalLoad"
-          TopLeft="30.1714365511526,8.61176938185679" />
+          TopLeft="9.07142863224965,65.9647113626807" />
         <NodeLayout
           Size="258.4,41.6"
           Id="Package\Sequence Container_LendingPad\File System Task_Delete_UnzippedFile"
           TopLeft="123.885723725144,281.741183720493" />
         <EdgeLayout
           Id="Package\Sequence Container_LendingPad.PrecedenceConstraints[Constraint]"
-          TopLeft="180.114293985951,116.741182079613">
+          TopLeft="171.542865268552,174.858829953514">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="14.4999919107986,46.341177703928"
+              EndConnector="23.0714206281975,27.223530376987"
               Start="0,0"
-              End="14.4999919107986,38.841177703928">
+              End="23.0714206281975,19.723530376987">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,19.170588851964" />
+                    End="0,9.61176518849349" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,19.170588851964"
-                    Point2="0,23.170588851964"
-                    Point3="4,23.170588851964" />
+                    Point1="0,9.61176518849349"
+                    Point2="0,13.6117651884935"
+                    Point3="4,13.6117651884935" />
                   <mssgle:LineSegment
-                    End="10.4999919107986,23.170588851964" />
+                    End="19.0714206281975,13.6117651884935" />
                   <mssgle:CubicBezierSegment
-                    Point1="10.4999919107986,23.170588851964"
-                    Point2="14.4999919107986,23.170588851964"
-                    Point3="14.4999919107986,27.170588851964" />
+                    Point1="19.0714206281975,13.6117651884935"
+                    Point2="23.0714206281975,13.6117651884935"
+                    Point3="23.0714206281975,17.6117651884935" />
                   <mssgle:LineSegment
-                    End="14.4999919107986,38.841177703928" />
+                    End="23.0714206281975,19.723530376987" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14742,30 +14769,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container_LendingPad.PrecedenceConstraints[Constraint 1]"
-          TopLeft="194.614285896749,204.682359783541">
+          TopLeft="194.614285896749,246.882360330501">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="58.4714378283947,77.0588239369524"
+              EndConnector="58.4714378283947,34.8588233899918"
               Start="0,0"
-              End="58.4714378283947,69.5588239369524">
+              End="58.4714378283947,27.3588233899918">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.5294119684762" />
+                    End="0,13.4294116949959" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,34.5294119684762"
-                    Point2="0,38.5294119684762"
-                    Point3="4,38.5294119684762" />
+                    Point1="0,13.4294116949959"
+                    Point2="0,17.4294116949959"
+                    Point3="4,17.4294116949959" />
                   <mssgle:LineSegment
-                    End="54.4714378283947,38.5294119684762" />
+                    End="54.4714378283947,17.4294116949959" />
                   <mssgle:CubicBezierSegment
-                    Point1="54.4714378283947,38.5294119684762"
-                    Point2="58.4714378283947,38.5294119684762"
-                    Point3="58.4714378283947,42.5294119684762" />
+                    Point1="54.4714378283947,17.4294116949959"
+                    Point2="58.4714378283947,17.4294116949959"
+                    Point3="58.4714378283947,21.4294116949959" />
                   <mssgle:LineSegment
-                    End="58.4714378283947,69.5588239369524" />
+                    End="58.4714378283947,27.3588233899918" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14776,30 +14803,30 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container_LendingPad.PrecedenceConstraints[Constraint 2]"
-          TopLeft="153.771436551153,50.2117693818568">
+          TopLeft="132.67142863225,107.564711362681">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="26.3428574347981,24.9294126977558"
+              EndConnector="38.8714366363022,25.6941185908335"
               Start="0,0"
-              End="26.3428574347981,17.4294126977558">
+              End="38.8714366363022,18.1941185908335">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,8.46470634887792" />
+                    End="0,8.84705929541677" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,8.46470634887792"
-                    Point2="0,12.4647063488779"
-                    Point3="4,12.4647063488779" />
+                    Point1="0,8.84705929541677"
+                    Point2="0,12.8470592954168"
+                    Point3="4,12.8470592954168" />
                   <mssgle:LineSegment
-                    End="22.3428574347981,12.4647063488779" />
+                    End="34.8714366363022,12.8470592954168" />
                   <mssgle:CubicBezierSegment
-                    Point1="22.3428574347981,12.4647063488779"
-                    Point2="26.3428574347981,12.4647063488779"
-                    Point3="26.3428574347981,16.4647063488779" />
+                    Point1="34.8714366363022,12.8470592954168"
+                    Point2="38.8714366363022,12.8470592954168"
+                    Point3="38.8714366363022,16.8470592954168" />
                   <mssgle:LineSegment
-                    End="26.3428574347981,17.4294126977558" />
+                    End="38.8714366363022,18.1941185908335" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14808,39 +14835,43 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Sequence Container_LendingPad\Execute SQL Task"
+          TopLeft="55.1714369769002,1.77647199317244" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="388.8,378.4"
           Size="388.8,421.6"
           Id="Package\Sequence Container_LendingPad"
-          TopLeft="491.000008089202,281.952943257065" />
+          TopLeft="438.142864331907,281.952943257065" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="142.942858541742,58.4235296477086">
+          TopLeft="90.0857147844471,58.4235296477086">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-10.2476194855305,88.4000018232004"
+              EndConnector="-10.2476194855304,88.4000018232"
               Start="0,0"
-              End="-10.2476194855305,80.9000018232004">
+              End="-10.2476194855304,80.9000018232">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,48.6651600967901" />
+                    End="0,48.6651600967898" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,48.6651600967901"
-                    Point2="0,52.6651600967901"
-                    Point3="-4,52.6651600967901" />
+                    Point1="0,48.6651600967898"
+                    Point2="0,52.6651600967898"
+                    Point3="-4,52.6651600967898" />
                   <mssgle:LineSegment
-                    End="-6.24761948553046,52.6651600967901" />
+                    End="-6.24761948553041,52.6651600967898" />
                   <mssgle:CubicBezierSegment
-                    Point1="-6.24761948553046,52.6651600967901"
-                    Point2="-10.2476194855305,52.6651600967901"
-                    Point3="-10.2476194855305,56.6651600967901" />
+                    Point1="-6.24761948553041,52.6651600967898"
+                    Point2="-10.2476194855304,52.6651600967898"
+                    Point3="-10.2476194855304,56.6651600967898" />
                   <mssgle:LineSegment
-                    End="-10.2476194855305,80.9000018232004" />
+                    End="-10.2476194855304,80.9000018232" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14851,7 +14882,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="204.961905722878,146.823531470909">
+          TopLeft="152.104761965583,146.823531470909">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -14886,99 +14917,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="168.828572389545,188.423531470909">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-16.1857151250454,75.4941202317151"
-              Start="0,0"
-              End="-16.1857151250454,67.9941202317151">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.7470601158576" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.7470601158576"
-                    Point2="0,37.7470601158576"
-                    Point3="-4,37.7470601158576" />
-                  <mssgle:LineSegment
-                    End="-12.1857151250454,37.7470601158576" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-12.1857151250454,37.7470601158576"
-                    Point2="-16.1857151250454,37.7470601158576"
-                    Point3="-16.1857151250454,41.7470601158576" />
-                  <mssgle:LineSegment
-                    End="-16.1857151250454,67.9941202317151" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="152.642857264499,305.517651702624">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-10.785707631889,50.7882366347062"
-              Start="0,0"
-              End="-10.785707631889,43.2882366347062">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.3941183173531" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.3941183173531"
-                    Point2="0,25.3941183173531"
-                    Point3="-4,25.3941183173531" />
-                  <mssgle:LineSegment
-                    End="-6.78570763188901,25.3941183173531" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-6.78570763188901,25.3941183173531"
-                    Point2="-10.785707631889,25.3941183173531"
-                    Point3="-10.785707631889,29.3941183173531" />
-                  <mssgle:LineSegment
-                    End="-10.785707631889,43.2882366347062" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="491.000008089202,561.686276590398">
+          TopLeft="438.142864331907,492.752943257065">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-100.028577328214,107.054908770976"
+              EndConnector="-100.028577328214,175.988242104309"
               Start="0,0"
-              End="-92.5285773282137,107.054908770976">
+              End="-92.5285773282137,175.988242104309">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-36.2383388571718,0" />
+                    End="-46.0142886641068,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="-36.2383388571718,0"
-                    Point2="-40.2383388571718,0"
-                    Point3="-40.2383388571718,4" />
+                    Point1="-46.0142886641068,0"
+                    Point2="-50.0142886641068,0"
+                    Point3="-50.0142886641068,4" />
                   <mssgle:LineSegment
-                    End="-40.2383388571718,103.054908770976" />
+                    End="-50.0142886641068,171.988242104309" />
                   <mssgle:CubicBezierSegment
-                    Point1="-40.2383388571718,103.054908770976"
-                    Point2="-40.2383388571718,107.054908770976"
-                    Point3="-44.2383388571718,107.054908770976" />
+                    Point1="-50.0142886641068,171.988242104309"
+                    Point2="-50.0142886641068,175.988242104309"
+                    Point3="-54.0142886641068,175.988242104309" />
                   <mssgle:LineSegment
-                    End="-92.5285773282137,107.054908770976" />
+                    End="-92.5285773282137,175.988242104309" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -14987,26 +14950,89 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="211.2,41.6"
+          Id="Package\Foreach Loop Container\FST Rename and Move Files"
+          TopLeft="43.2000088555475,133.141183173533" />
+        <NodeLayout
+          Size="232,41.6"
+          Id="Package\Foreach Loop Container\Execute Process Task_UnzipFiles"
+          TopLeft="12.8714302500901,30.8117699288174" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="144.514289643327,397.90588833733">
+          Id="Package\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          TopLeft="128.87143025009,72.4117699288174">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,43.9529385167429"
+              EndConnector="19.9285786054573,60.7294132447151"
               Start="0,0"
-              End="0,36.4529385167429">
+              End="19.9285786054573,53.2294132447151">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,36.4529385167429" />
+                    End="0,26.3647066223576" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.3647066223576"
+                    Point2="0,30.3647066223576"
+                    Point3="4,30.3647066223576" />
+                  <mssgle:LineSegment
+                    End="15.9285786054573,30.3647066223576" />
+                  <mssgle:CubicBezierSegment
+                    Point1="15.9285786054573,30.3647066223576"
+                    Point2="19.9285786054573,30.3647066223576"
+                    Point3="19.9285786054573,34.3647066223576" />
+                  <mssgle:LineSegment
+                    End="19.9285786054573,53.2294132447151" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="291.2,228.8"
+          Size="291.2,272"
+          Id="Package\Foreach Loop Container"
+          TopLeft="115.257144779089,230.988237546307" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="115.97142863225,188.423531470909">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="144.885716146839,42.5647060753981"
+              Start="0,0"
+              End="144.885716146839,35.0647060753981">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.282353037699" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.282353037699"
+                    Point2="0,21.282353037699"
+                    Point3="4,21.282353037699" />
+                  <mssgle:LineSegment
+                    End="140.885716146839,21.282353037699" />
+                  <mssgle:CubicBezierSegment
+                    Point1="140.885716146839,21.282353037699"
+                    Point2="144.885716146839,21.282353037699"
+                    Point3="144.885716146839,25.282353037699" />
+                  <mssgle:LineSegment
+                    End="144.885716146839,35.0647060753981" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="64.4428580734193,26.282353037699,16,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -15133,7 +15159,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="120.825759252432,25.4941182261933,138.4627734375,10.7841796875"
+              BoundingBox="120.825759252431,25.4941182261933,138.4627734375,10.7841796875"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
