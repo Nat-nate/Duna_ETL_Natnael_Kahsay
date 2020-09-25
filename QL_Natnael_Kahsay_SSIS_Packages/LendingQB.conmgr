@@ -6,7 +6,7 @@
   <DTS:PropertyExpression
     DTS:Name="ConnectionString">@[$Project::Par_LendingQB_ConnectionString]</DTS:PropertyExpression>
   <DTS:PropertyExpression
-    DTS:Name="Password">@[$Project::LendingQB_Password]</DTS:PropertyExpression>
+    DTS:Name="Password">@[$Project::Par_LendingQB_Password]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <ODataConnectionManager
       UserName="sharepoint@dunatk.com"
@@ -15,7 +15,7 @@
       MicrosoftOnlineServicesAuth="True"
       AuthType="MicrosoftOnlineService">
       <Password
-        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAADPUXYJNwEz0Orml5nOtp1WfigpJ5am+uxESxDblb+nagAAAAAOgAAAAAIAACAAAABp31VBgYp6qIMCmOE33Z3nzKddQjabAimgQz+XNgjxt0AAAAAY+dwRsMcnR8PBazx0EFKQLxk28WHCCMCIMDoVw1diEj1sjCLhIRtBGD6dZcD2lNaMdgRJ4diiQ4nnDUe2el3DQAAAAFkWrIKc1drb/SQ7bnTEF91ZkM0NxRqg6xWA+trGYQeO8D7LJ1kac74QvRHm924YqBbcEMEBubOC9gM6L7DQ7es=</Password>
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAADk2OQtf1aaGHdcmF+Y8z4KE2oykfmOQTeX2w3MXbikaAAAAAAOgAAAAAIAACAAAADDUknZropEKOCKlUVeyXT14IEobN+ZFjukDf73moBzXUAAAAD0HWp9ii2mrVRHExYX6EM6VaPWmHmQiCChFQV22bv4Y5Pc0Jg1V4IW5TjO+1AnwrG7vYRy2l/veYe0z3T45B3nQAAAAFX2qs7jZeKOGjdNFZ0FlrLGE1L71lY838yKL6kxTVAyg2648McqaLOnCnIkdTQ5hA9WOSKXpTVwpeDwEBv1zvU=</Password>
     </ODataConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

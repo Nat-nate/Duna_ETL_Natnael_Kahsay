@@ -2,33 +2,38 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>QL_Natnael_Kahsay_SSIS_Packages</Name>
-    <LastWriteTime>2020-09-23T23:25:22.168679Z</LastWriteTime>
+    <LastWriteTime>2020-09-24T22:57:12.8395252Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Pkg_Natnael_Kahsay_LendingQB.dtsx</Name>
-      <LastWriteTime>2020-09-15T18:38:30.8346561Z</LastWriteTime>
+      <LastWriteTime>2020-09-25T04:35:53.9016673Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Natnael_Kahsay_ QualityLoans.dtsx</Name>
-      <LastWriteTime>2020-09-17T21:31:28.9592083Z</LastWriteTime>
+      <LastWriteTime>2020-09-25T04:35:53.9310973Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Natnael_Kahsay_UberWriter.dtsx</Name>
-      <LastWriteTime>2020-09-17T15:26:33.7784172Z</LastWriteTime>
+      <LastWriteTime>2020-09-25T04:24:15.6656668Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Natnael_Kahsay_LendingPad.dtsx</Name>
-      <LastWriteTime>2020-09-22T23:48:53.7968073Z</LastWriteTime>
+      <LastWriteTime>2020-09-25T04:35:53.9181317Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Pkg_Natnael_Kahsay_SimpleNexus.dtsx</Name>
-      <LastWriteTime>2020-09-24T01:54:57.8450293Z</LastWriteTime>
+      <LastWriteTime>2020-09-25T04:35:53.8777311Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Pkg_FirstName_LastName_Quicken_Loans_Master.dtsx</Name>
+      <LastWriteTime>2020-09-24T23:21:01.9965955Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

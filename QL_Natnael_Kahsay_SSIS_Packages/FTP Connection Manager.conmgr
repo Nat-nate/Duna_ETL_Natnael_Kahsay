@@ -5,6 +5,10 @@
   DTS:CreationName="FTP">
   <DTS:PropertyExpression
     DTS:Name="ConnectionString">@[$Project::Par_FTPConnectionManager_ConnectionString]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="ServerPassword">@[$Project::Par_FTPConnectionManager_ServerPassword]</DTS:PropertyExpression>
+  <DTS:PropertyExpression
+    DTS:Name="UsePassiveMode">@[$Project::Par_FTPConnectionManager_UsePassiveMode]</DTS:PropertyExpression>
   <DTS:ObjectData>
     <DTS:ConnectionManager
       DTS:ConnectionString="ftp.drivehq.com:21">
@@ -14,7 +18,7 @@
         DTS:UsePassiveMode="True">
         <DTS:Property
           DTS:Name="ServerPassword"
-          Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAABN3+MTYrPykLLWOpc3/V01/kjWLj7gkC3+hvn7PTtlUwAAAAAOgAAAAAIAACAAAACi//ozzCPIDRHi9wxsDdfJloPXo4JKnHnsVPhksjJWYZAAAAC4N9ugq7ItXLx9jGt1hOktjkSb0vtTYgZZk+suQrPP9vcQvqMngUSZIPXEVQwvoN5X6B9eVhH3kGXgbox3Eht1rFLh7mWGfIIvqva+8YuaO5yBwSGcpkG47TpHhFyBC/IDxo2qc4H3Jz6WOPxFF5DlMaZi2mYPYCkIAnWs6Bm271wyKdE2XXatzECN8VekepVAAAAAEfxG9WSb2SzHMu6GyzdXRt8fh3J2WEaFhJHBp5Tl0bdIo3k/6v9KwH7mClZ0QZ13ClhFzkDqFaffjii8IB8n6A==</DTS:Property>
+          Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAABNdFMw1y6SuAlVIIjyxzZBEmw0CGm7tpk4lSb/p8IAIQAAAAAOgAAAAAIAACAAAABhkMyl/ZBTHvPfID2ryROvJ3c/874uaxjFJ+g4AUnehpAAAAB1WW1Efl9aBa3v+84DKrH5fkJrI3W4FK7RJuCzZ/UCXtBeXV+mcLWSYDfhJbz79Z3CNThuyDU6Vy5QYHWnrs974eqskFW8FCbr93WOwrTOSbfox9MoefzyZT5moliratt9GBFcO5NFrb4Anq92TNnkONEkSt71UkCybfP6F+LOySmQzcsyfXndwF6zW7dVOvNAAAAAAy4il4x7E4xwJ1v8FMG/7h3XGBo36VeQs+VU35DFvC9N2mYUtOnnTuZCpAaKupuUUVQ19UtOBpUHOii1MDNP1g==</DTS:Property>
       </DTS:FtpConnection>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
