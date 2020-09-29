@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_FirstName_LastName_Quicken_Loans_Master"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{A7BCEDCB-A235-45BF-BD13-BFF4D587749C}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{5B392122-5A24-4F98-9D5F-64D0F5D832F5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -52,19 +52,20 @@
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
-      DTS:refId="Package\Execute Package Task_QualityLoans"
+      DTS:refId="Package\Execute Package Task_QuickenLoans"
       DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:DelayValidation="True"
       DTS:Description="Execute Package Task"
       DTS:DTSID="{AC0920A8-6B0A-4760-A9EC-0D6D6DA4E8BF}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Execute Package Task_QualityLoans"
+      DTS:ObjectName="Execute Package Task_QuickenLoans"
       DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
         <ExecutePackageTask>
           <UseProjectReference>True</UseProjectReference>
-          <PackageName>Pkg_Natnael_Kahsay_ QualityLoans.dtsx</PackageName>
+          <PackageName>Pkg_Natnael_Kahsay_ QuickenLoans.dtsx</PackageName>
         </ExecutePackageTask>
       </DTS:ObjectData>
     </DTS:Executable>
@@ -108,8 +109,7 @@
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
       DTS:DTSID="{D24B0203-3D68-4ECF-B7D4-3F4E5AC996A2}"
-      DTS:From="Package\Execute Package Task_QualityLoans"
-      DTS:LogicalAnd="True"
+      DTS:From="Package\Execute Package Task_QuickenLoans"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Execute Package Task_LendingPad"
       DTS:Value="2" />
@@ -118,7 +118,6 @@
       DTS:CreationName=""
       DTS:DTSID="{DC37A69A-8F1C-4E9A-B2C5-90E2DFDED94F}"
       DTS:From="Package\Execute Package Task_LendingPad"
-      DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\Execute Package Task_LendingQB"
       DTS:Value="2" />
@@ -127,7 +126,6 @@
       DTS:CreationName=""
       DTS:DTSID="{4D44F756-DDA4-4D2F-93BD-A5D7349E80FD}"
       DTS:From="Package\Execute Package Task_LendingQB"
-      DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
       DTS:To="Package\Execute Package Task_SimpleNexus"
       DTS:Value="2" />
@@ -136,7 +134,6 @@
       DTS:CreationName=""
       DTS:DTSID="{24B1F1D1-9568-401C-8DB1-3C3B662EC20C}"
       DTS:From="Package\Execute Package Task_SimpleNexus"
-      DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
       DTS:To="Package\Execute Package Task_UberWriter"
       DTS:Value="2" />
@@ -154,10 +151,6 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="248.8,41.6"
-          Id="Package\Execute Package Task_QualityLoans"
-          TopLeft="123.571430675837,60.4117655531346" />
-        <NodeLayout
           Size="243.2,41.6"
           Id="Package\Execute Package Task_LendingPad"
           TopLeft="155.000002639634,135.352943074744" />
@@ -165,6 +158,10 @@
           Size="239.2,41.6"
           Id="Package\Execute Package Task_LendingQB"
           TopLeft="172.142860074433,228.647062030218" />
+        <NodeLayout
+          Size="253.6,41.6"
+          Id="Package\Execute Package Task_QuickenLoans"
+          TopLeft="123.571430675837,60.4117655531346" />
         <NodeLayout
           Size="248.8,41.6"
           Id="Package\Execute Package Task_SimpleNexus"
@@ -175,37 +172,37 @@
           TopLeft="205.000003491129,386.941181897292" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="247.971430675837,102.011765553135">
+          TopLeft="250.371430675837,102.011765553135">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="28.6285719637968,33.3411775216099"
+              EndConnector="26.228571963797,33.3411775216094"
               Start="0,0"
-              End="28.6285719637968,25.8411775216099">
+              End="26.228571963797,25.8411775216094">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,12.670588760805" />
+                    End="0,12.6705887608047" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,12.670588760805"
-                    Point2="0,16.670588760805"
-                    Point3="4,16.670588760805" />
+                    Point1="0,12.6705887608047"
+                    Point2="0,16.6705887608047"
+                    Point3="4,16.6705887608047" />
                   <mssgle:LineSegment
-                    End="24.6285719637968,16.670588760805" />
+                    End="22.228571963797,16.6705887608047" />
                   <mssgle:CubicBezierSegment
-                    Point1="24.6285719637968,16.670588760805"
-                    Point2="28.6285719637968,16.670588760805"
-                    Point3="28.6285719637968,20.670588760805" />
+                    Point1="22.228571963797,16.6705887608047"
+                    Point2="26.228571963797,16.6705887608047"
+                    Point3="26.228571963797,20.6705887608047" />
                   <mssgle:LineSegment
-                    End="28.6285719637968,25.8411775216099" />
+                    End="26.228571963797,25.8411775216094" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-10.9901671431016,21.670588760805,50.60890625,11.609375"
+              BoundingBox="-12.1901671431015,21.6705887608047,50.60890625,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>

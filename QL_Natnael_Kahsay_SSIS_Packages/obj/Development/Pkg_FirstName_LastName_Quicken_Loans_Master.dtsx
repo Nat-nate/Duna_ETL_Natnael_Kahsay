@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Pkg_FirstName_LastName_Quicken_Loans_Master"
   DTS:PackageType="5"
-  DTS:VersionBuild="5"
-  DTS:VersionGUID="{A7BCEDCB-A235-45BF-BD13-BFF4D587749C}">
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{3AD7777D-E647-492D-B197-989AF51820D4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables />
@@ -54,6 +54,7 @@
     <DTS:Executable
       DTS:refId="Package\Execute Package Task_QualityLoans"
       DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:DelayValidation="True"
       DTS:Description="Execute Package Task"
       DTS:DTSID="{AC0920A8-6B0A-4760-A9EC-0D6D6DA4E8BF}"
       DTS:ExecutableType="Microsoft.ExecutePackageTask"
@@ -109,7 +110,6 @@
       DTS:CreationName=""
       DTS:DTSID="{D24B0203-3D68-4ECF-B7D4-3F4E5AC996A2}"
       DTS:From="Package\Execute Package Task_QualityLoans"
-      DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
       DTS:To="Package\Execute Package Task_LendingPad"
       DTS:Value="2" />
@@ -118,7 +118,6 @@
       DTS:CreationName=""
       DTS:DTSID="{DC37A69A-8F1C-4E9A-B2C5-90E2DFDED94F}"
       DTS:From="Package\Execute Package Task_LendingPad"
-      DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\Execute Package Task_LendingQB"
       DTS:Value="2" />
@@ -127,7 +126,6 @@
       DTS:CreationName=""
       DTS:DTSID="{4D44F756-DDA4-4D2F-93BD-A5D7349E80FD}"
       DTS:From="Package\Execute Package Task_LendingQB"
-      DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
       DTS:To="Package\Execute Package Task_SimpleNexus"
       DTS:Value="2" />
@@ -136,7 +134,6 @@
       DTS:CreationName=""
       DTS:DTSID="{24B1F1D1-9568-401C-8DB1-3C3B662EC20C}"
       DTS:From="Package\Execute Package Task_SimpleNexus"
-      DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
       DTS:To="Package\Execute Package Task_UberWriter"
       DTS:Value="2" />
@@ -154,10 +151,6 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="248.8,41.6"
-          Id="Package\Execute Package Task_QualityLoans"
-          TopLeft="123.571430675837,60.4117655531346" />
-        <NodeLayout
           Size="243.2,41.6"
           Id="Package\Execute Package Task_LendingPad"
           TopLeft="155.000002639634,135.352943074744" />
@@ -165,6 +158,10 @@
           Size="239.2,41.6"
           Id="Package\Execute Package Task_LendingQB"
           TopLeft="172.142860074433,228.647062030218" />
+        <NodeLayout
+          Size="248.8,41.6"
+          Id="Package\Execute Package Task_QualityLoans"
+          TopLeft="123.571430675837,60.4117655531346" />
         <NodeLayout
           Size="248.8,41.6"
           Id="Package\Execute Package Task_SimpleNexus"
