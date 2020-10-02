@@ -58,7 +58,7 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value">InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;TokenPath=;ClientId=;RedirectUri=;CertificateThumbprint=;UserName=salesforce@dunallc.com.sandboxdev;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True</SSIS:Property>
+        SSIS:Name="Value">InstanceType=Sandbox;AuthenticationType=AuthorizationCode;ServiceEndpoint=SOAP;ServiceUrl=https://test.salesforce.com/services/Soap/u/48.0;TokenPath=;ClientId=;RedirectUri=;CertificateThumbprint=;UserName=salesforce@dunallc.com.sandboxdev;Password=dunaTek123@1;ServiceTimeout=120;ProxyMode=NoProxy;ProxyServer=;ProxyServerPort=0;ProxyUsername=;RetryOnIntermittentErrors=True</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
@@ -79,7 +79,7 @@
       <SSIS:Property
         SSIS:Name="Sensitive">0</SSIS:Property>
       <SSIS:Property
-        SSIS:Name="Value">Data Source=Duna.database.windows.net;User ID=UberWriter;Initial Catalog=UberWriter;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;</SSIS:Property>
+        SSIS:Name="Value">Data Source=Duna.database.windows.net;User ID=UberWriter;Password=Uber^5512;Initial Catalog=UberWriter;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
@@ -101,7 +101,7 @@
         SSIS:Name="Sensitive">1</SSIS:Property>
       <SSIS:Property
         SSIS:Name="Value"
-        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAADRhKqRXYjhSHLy6rByFvQzfbHuXuu7yC+cuiuuDtwnIAAAAAAOgAAAAAIAACAAAADjmZCFM/QwWpWkYSOm15D3Pt6W+HjVWLv9vFKH5d6QCIAAAAB9W5BzAVmUhpf+GgSOT7Ym/JzbI++XpmRctxW2k5Lt6g4BWWo0+pDdB+lkWCLLdn/WKWXwEhXgxQy8yRaJpWxHkg+FV0/eFVgxmT6UBetKzS7cd634tXv1LtsrTz0x5V5qHzAqfJ0X6RCnbHFRdsEtAbGF/UYaJhZbYiKTv7OIeEAAAAB544LmH2EfptzPZlQaRxu3S19QNWIqI72FEdQUah5AHFNLCF28kCH2LRWa+SBH0Bdu+3mzAh5OojjeMxLdr6Ck</SSIS:Property>
+        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAABMJIw2WoFDGwlccqs3rmMicmqNWwLQykOsAvREIxS2ogAAAAAOgAAAAAIAACAAAADg6FqlGOaO87H/OCFYqHHXoAtksv6NVaaG3CfEiuIoK4AAAAAOYYtsvAVTM78KiPWkbMUcVhu/Dnuz415z5c+FHm/ms8379kSSxvS/LPcwwzpxM3hfmceCsBNeAWDIhvUZqUeYSs5oxspzqckZz0DjZMXeEhS9p46VHLF1SpqIAEI8VECNWZ7+Zk/27557IZShp0/dkD2EmwI+32m9bqgL+boaskAAAABbH2vMwVCAmvNk61GUv9peOXsG59F1aS0TYMQpkluuI1/XBGZLkWh05Cye6WeJM+ThYud3ybtlhHzyF14lR0jj</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
@@ -165,7 +165,7 @@
         SSIS:Name="Sensitive">1</SSIS:Property>
       <SSIS:Property
         SSIS:Name="Value"
-        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAABzxL0jhWGYXZd3WcyhRuTL+WXNaFpaAN7xzg5adiAWDwAAAAAOgAAAAAIAACAAAAD1VasAZjq97DAmFVDlRD9wqHBZ/PuneSAZ9Pvrb0PWLZAAAACoPVGlEMk97HNLR+Li4Bh0mN9hTn46iows3Idfo1SOe1liyHoGKbmrTTvzMHfhT1xCNmBOZGp+F/C0MYIbq5ZeMPsGcXCziTW0wDkounYbSKUrymOilRcDB43+x/H0qbJRIItCvog3/lV/ew64iWZpkJhxVXS8skBUSL3oWAovIto1GOOwz1wnpmqAgNp4Q9hAAAAA9Tb7nVTObSy8jKKloZXRA3CixpEmj2xYHYeSfo/rrpgzZWqyb4G8lqg2XxPkKFv4xsj4UvNuRTbMwu1gntaDNA==</SSIS:Property>
+        SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAABdPiU1Hd8U+GaPYR5cOOwAAAAAACAAAAAAAQZgAAAAEAACAAAAA4q2TWXYJUUUnZyOst6nLNr41VWDe9DfI7BCOjTi+K8QAAAAAOgAAAAAIAACAAAAB4DJQch2c96dIyb1rBtCtgYNQ54l/eT7QnE2ijzAJrS5AAAADigebnFYlNW/ad5KwfM0648QNjc85VwKciODTyzgVaxOYkevarzEl6erTGa+fBLAKRl2AdYDbGgj7tvc358NiHeZG7xYXHw7ClkWkOsN25JED7JHYOQtWIBiE8Wdw3CYz7zt5rZj35zSTqjddrWrh8N2ugc2pB4ROa5Vn6Dk3cjqrP0EVvKruQ01FXAn6tg+pAAAAAA6bym1iXDmzBRq4zqEn1JfviZlgC2TZW0Wi0H2MdOuaQ6aByG6XUMaG7JEUTrUjhLjxudovkN4/WBiIS9DMbEQ==</SSIS:Property>
       <SSIS:Property
         SSIS:Name="DataType">18</SSIS:Property>
     </SSIS:Properties>
